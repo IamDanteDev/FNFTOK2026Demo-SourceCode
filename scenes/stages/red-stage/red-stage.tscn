@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://gxo20tdynffl"]
+
+[ext_resource type="Script" uid="uid://co5f1eevakw0t" path="res://scenes/game/stage/stage.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bn4cvaxrumra4" path="res://scenes/stages/red-stage/red_example.2jpg.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://fokvf2c8ouw3" path="res://scenes/stages/red-stage/Untitled_Artwork-1.png" id="3"]
+[ext_resource type="Script" uid="uid://hoxvg8iqm7du" path="res://assets/resources/shaders/psudo_3D.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://dj7nbb5tcowmx" path="res://scenes/stages/red-stage/Untitled_Artwork-2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c47dhao1fdfrt" path="res://scenes/stages/red-stage/Untitled_Artwork-3.png" id="6"]
+[ext_resource type="Script" uid="uid://bpka2uqyqv54v" path="res://scenes/stages/red-stage/sprites.gd" id="7"]
+[ext_resource type="Script" uid="uid://bhue8scd5l81s" path="res://scripts/character_switcher.gd" id="8"]
+[ext_resource type="PackedScene" uid="uid://yxq2l6jchq0w" path="res://scenes/game/character/folded-spiny/folded-spiny.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://dle4ly4ivaxxt" path="res://scenes/game/character/folded-shyguy/folded-shyguy.tscn" id="10"]
+[ext_resource type="PackedScene" uid="uid://bjyxbyrmpojt7" path="res://scenes/game/character/folded-goomba/folded-goomba.tscn" id="11"]
+[ext_resource type="Texture2D" uid="uid://dwwx25vtl7h57" path="res://scenes/stages/picnic-stage/Untitled_Artwork-6.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cypp8ric2rmhs" path="res://scenes/stages/picnic-stage/Untitled_Artwork-5.png" id="13"]
+[ext_resource type="FontFile" uid="uid://db8o3ho7eo0xj" path="res://assets/resources/fonts/FOT-PopJoyStd-B.otf" id="14"]
+[ext_resource type="Script" uid="uid://dxdla6kqigvq8" path="res://assets/resources/PencilsTextEffect.gd" id="15"]
+[ext_resource type="Texture2D" uid="uid://baheyknclaqky" path="res://scenes/states/menus/main_menu/sprites/filterw.png" id="16"]
+[ext_resource type="FontFile" uid="uid://quqkthhlchvc" path="res://assets/resources/fonts/mariofontv3solidremake.ttf" id="17"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vp4n"]
+bg_color = Color(0, 0, 0, 0.75000006)
+corner_radius_top_left = 500
+corner_radius_top_right = 500
+corner_radius_bottom_right = 500
+corner_radius_bottom_left = 500
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_jwqdp"]
+script = ExtResource("15")
+
+[node name="Stage" type="Node2D" unique_id=834487184]
+script = ExtResource("1")
+camera_zoom = Vector2(0.6, 0.6)
+player_position = Vector2(770, 100)
+enemy_position = Vector2(100, 100)
+gf_position = Vector2(400, 130)
+offset_amount = 10.0
+stage_center = NodePath("Positions/StageCenter")
+
+[node name="Positions" type="Node" parent="." unique_id=1041855839]
+
+[node name="PlayerPosition" type="Marker2D" parent="Positions" unique_id=579311707]
+position = Vector2(546, 525)
+
+[node name="EnemyPosition" type="Marker2D" parent="Positions" unique_id=890909958]
+position = Vector2(-560, 532)
+
+[node name="GFPosition" type="Marker2D" parent="Positions" unique_id=768549649]
+position = Vector2(193, 491)
+
+[node name="RatingPosition" type="Marker2D" parent="Positions" unique_id=388204664]
+position = Vector2(0, 82)
+
+[node name="StageCenter" type="Marker2D" parent="Positions" unique_id=796790818]
+position = Vector2(0, 77)
+
+[node name="RedExample_2Jpg" type="Sprite2D" parent="." unique_id=950400777]
+scale = Vector2(1.07, 1.07)
+texture = ExtResource("2")
+
+[node name="sky" type="Sprite2D" parent="." unique_id=240741600]
+self_modulate = Color(1.1, 1.1, 1.1, 1)
+scale = Vector2(1.07, 1.07)
+texture = ExtResource("3")
+script = ExtResource("4")
+ObjectWeight = -0.3
+
+[node name="cliffs" type="Sprite2D" parent="." unique_id=1179873968]
+scale = Vector2(1.07, 1.07)
+texture = ExtResource("5")
+script = ExtResource("4")
+ObjectWeight = -0.3
+
+[node name="ground" type="Sprite2D" parent="." unique_id=1581646314]
+scale = Vector2(1.07, 1.07)
+texture = ExtResource("6")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=879148493]
+script = ExtResource("7")
+
+[node name="Characters" type="Node2D" parent="." unique_id=597161380 node_paths=PackedStringArray("stage")]
+script = ExtResource("8")
+stage = NodePath("..")
+
+[node name="spiny" parent="Characters" unique_id=1110373527 instance=ExtResource("9")]
+z_index = 1
+position = Vector2(-502, 304)
+flip_x = false
+
+[node name="shyguy" parent="Characters" unique_id=1677651075 instance=ExtResource("10")]
+z_index = 1
+position = Vector2(-708, 535)
+flip_x = false
+
+[node name="goomba" parent="Characters" unique_id=801404191 instance=ExtResource("11")]
+z_index = 1
+position = Vector2(-468, 533)
+flip_x = false
+
+[node name="UntitledArtwork-6" type="Sprite2D" parent="." unique_id=236754371]
+position = Vector2(773, 0)
+scale = Vector2(1.07, 1.07)
+texture = ExtResource("12")
+script = ExtResource("4")
+ObjectWeight = 0.2
+
+[node name="forground" type="Sprite2D" parent="." unique_id=901141755]
+position = Vector2(-826, 0)
+scale = Vector2(1.07, 1.07)
+texture = ExtResource("13")
+script = ExtResource("4")
+ObjectWeight = 0.2
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=661092559]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=889010879]
+layer = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1439868485]
+offset_top = 511.0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer" unique_id=1860398105]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="DialogueBox" type="PanelContainer" parent="CanvasLayer/MarginContainer/Control" unique_id=1992758575]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -446.0
+offset_top = -45.0
+offset_right = 440.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(531, 181.5)
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5vp4n")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer/Control/DialogueBox" unique_id=643828700]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 0
+
+[node name="Text" type="RichTextLabel" parent="CanvasLayer/MarginContainer/Control/DialogueBox/MarginContainer" unique_id=631172942]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 6
+mouse_filter = 2
+theme_override_constants/line_separation = 12
+theme_override_fonts/normal_font = ExtResource("14")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "These are very simple but they come at you FAST! It's only ONE beat and you dodge on the next!"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+custom_effects = [SubResource("RichTextEffect_jwqdp")]
+visible_characters_behavior = 1
+
+[node name="Filter" type="Sprite2D" parent="CanvasLayer" unique_id=2084002867]
+modulate = Color(0, 0, 0, 0.3)
+position = Vector2(640, 360)
+texture = ExtResource("16")
+
+[node name="Label" type="RichTextLabel" parent="CanvasLayer" unique_id=1059582736]
+offset_left = 431.0
+offset_top = 508.0
+offset_right = 876.0
+offset_bottom = 567.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1764706)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("17")
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[wave] PRESS [KEY] TO DODGE"
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1

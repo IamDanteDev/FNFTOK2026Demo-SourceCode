@@ -1,0 +1,554 @@
+[gd_scene format=3 uid="uid://ejdu51mc82ua"]
+
+[ext_resource type="Script" uid="uid://1wrp533ri1a4" path="res://scenes/states/menus/freeplay_menu/freeplay_option.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://by2cnkbxhhuip" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-11.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bgjod306a15y5" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-12.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://phnqqlmcnnvg" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-13.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dawlmuuqmrujj" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-14.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ge3uee12igur" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-15.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://donb6gclxmq8s" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-16.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dwp5mtyan0ker" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-17.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://ccrrmw4frhy7c" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-18.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b0xhk4jkynk8g" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-19.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dwnuf1ppoirqj" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-20.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://ckgtkdxx65vt" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-1.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://gb1p43aemlch" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-2.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://c57uripo6h3ri" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-3.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://if2c5nfj7igh" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-4.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dmrvox8xu83u7" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-5.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://b3060yrwvk44b" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-6.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://de8xmd3mw551o" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-7.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://dk1xatgx55xyl" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-8.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://clauvjdfj5xva" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-9.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://dngxpxj4l80n8" path="res://scenes/states/menus/freeplay_menu/sprites/panel/body/Free-10.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dvol5sg246e1s" path="res://scenes/states/menus/freeplay_menu/sprites/panel/ribbon/Freeky-1.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://hjmxbfadd2fo" path="res://scenes/states/menus/freeplay_menu/sprites/panel/ribbon/Freeky-2.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://rg8gn48b254l" path="res://scenes/states/menus/freeplay_menu/sprites/panel/ribbon/Freeky-3.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://biidd03su4mwj" path="res://scenes/states/menus/freeplay_menu/sprites/panel/ribbon/Freeky-4.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://c3xhn355hwbh0" path="res://scenes/states/menus/freeplay_menu/sprites/panel/ribbon/Freeky-5.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://cq1br0hk1sjgf" path="res://scenes/states/menus/freeplay_menu/sprites/panel/ribbon/Freeky-6.png" id="27"]
+[ext_resource type="FontFile" uid="uid://db8o3ho7eo0xj" path="res://assets/resources/fonts/FOT-PopJoyStd-B.otf" id="28"]
+[ext_resource type="Texture2D" uid="uid://bryc4gpo25n62" path="res://scenes/states/menus/freeplay_menu/Star.png" id="29"]
+[ext_resource type="FontFile" uid="uid://dbg7kjvsxw73i" path="res://assets/resources/fonts/New Super Mario Font U.ttf" id="30"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_70c4t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}],
+"loop": false,
+"name": &"extra",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("12")
+}, {
+"duration": 0.5,
+"texture": ExtResource("13")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 0.5,
+"texture": ExtResource("18")
+}, {
+"duration": 0.5,
+"texture": ExtResource("19")
+}, {
+"duration": 0.5,
+"texture": ExtResource("20")
+}, {
+"duration": 0.5,
+"texture": ExtResource("21")
+}],
+"loop": false,
+"name": &"story",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cww00"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="Animation" id="Animation_erubi"]
+resource_name = "0"
+length = 0.333338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [9, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/sprite:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/sprite:rotation")
+tracks/2/interp = 4
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_qdq1x"]
+resource_name = "1"
+length = 0.333338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0833333, 0.333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/sprite:rotation")
+tracks/1/interp = 4
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/sprite:modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_0aw1l"]
+resource_name = "2"
+length = 0.333338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/sprite:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.95, 0.95), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/sprite:rotation")
+tracks/2/interp = 4
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.034906585, 0.017453292, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/sprite:modulate")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1.8247963, 1.8247963, 1.8247963, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qhuq8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/sprite:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/sprite:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0aw1l"]
+_data = {
+&"0": SubResource("Animation_erubi"),
+&"1": SubResource("Animation_qdq1x"),
+&"2": SubResource("Animation_0aw1l"),
+&"RESET": SubResource("Animation_qhuq8")
+}
+
+[node name="FreeplayOption" type="MarginContainer" unique_id=982051957 node_paths=PackedStringArray("title", "sprite", "ribbon", "anim", "icon", "score", "accuracy", "combat", "total_completion")]
+custom_minimum_size = Vector2(680, 120)
+script = ExtResource("1")
+title = NodePath("Control/sprite/HeaderHolder/HBoxContainer/title")
+sprite = NodePath("Control/sprite")
+ribbon = NodePath("Control/sprite/ribbon")
+anim = NodePath("AnimationPlayer")
+icon = NodePath("Control/mask/icon")
+min_y = 120.0
+min_x = 680.0
+max_y = 350.0
+score = NodePath("Control/sprite/StatContainer/VBoxContainer/Score/value")
+accuracy = NodePath("Control/sprite/StatContainer/VBoxContainer/Accuracy/value")
+combat = NodePath("Control/sprite/StatContainer/VBoxContainer/CombatRank/value")
+total_completion = NodePath("Control/sprite/StatContainer/VBoxContainer/TotalCompletion/value")
+
+[node name="Control" type="Control" parent="." unique_id=1702723679]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="sprite" type="AnimatedSprite2D" parent="Control" unique_id=2085237895]
+clip_children = 2
+sprite_frames = SubResource("SpriteFrames_70c4t")
+animation = &"story"
+
+[node name="ribbon" type="AnimatedSprite2D" parent="Control/sprite" unique_id=1473778138]
+sprite_frames = SubResource("SpriteFrames_cww00")
+frame = 6
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Control/sprite/ribbon" unique_id=692883107]
+remote_path = NodePath("../../../mask")
+
+[node name="HeaderHolder" type="MarginContainer" parent="Control/sprite" unique_id=1818092620]
+offset_left = -317.0
+offset_top = -157.0
+offset_right = 331.0
+offset_bottom = -93.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/sprite/HeaderHolder" unique_id=1277659596]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="title" type="Label" parent="Control/sprite/HeaderHolder/HBoxContainer" unique_id=1054072732]
+custom_minimum_size = Vector2(486, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.976471, 0.980392, 0.764706, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 32
+text = "Song Title"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/sprite/HeaderHolder/HBoxContainer" unique_id=804293627]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StatContainer" type="MarginContainer" parent="Control/sprite" unique_id=1575942563]
+offset_left = -339.0
+offset_top = -84.0
+offset_right = 316.0
+offset_bottom = 128.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/sprite/StatContainer" unique_id=512655587]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Score" type="HBoxContainer" parent="Control/sprite/StatContainer/VBoxContainer" unique_id=219321179]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="title" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/Score" unique_id=1475350261]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="value" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/Score" unique_id=313560174]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "----"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Accuracy" type="HBoxContainer" parent="Control/sprite/StatContainer/VBoxContainer" unique_id=847944559]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="title" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/Accuracy" unique_id=1900989767]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "Accuracy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="value" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/Accuracy" unique_id=2144962011]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "----"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CombatRank" type="HBoxContainer" parent="Control/sprite/StatContainer/VBoxContainer" unique_id=1197463537]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="title" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/CombatRank" unique_id=515695786]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "Combat Rank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="value" type="HBoxContainer" parent="Control/sprite/StatContainer/VBoxContainer/CombatRank" unique_id=2103033625]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="TextureRect" type="TextureRect" parent="Control/sprite/StatContainer/VBoxContainer/CombatRank/value" unique_id=507945272]
+layout_mode = 2
+texture = ExtResource("29")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="Control/sprite/StatContainer/VBoxContainer/CombatRank/value" unique_id=911478005]
+layout_mode = 2
+texture = ExtResource("29")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="Control/sprite/StatContainer/VBoxContainer/CombatRank/value" unique_id=1768242596]
+modulate = Color(0, 0, 0, 0.3)
+layout_mode = 2
+texture = ExtResource("29")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="ColorRect" type="ColorRect" parent="Control/sprite/StatContainer/VBoxContainer" unique_id=1096695045]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+color = Color(0.2448, 0.28128, 0.36, 0.529412)
+
+[node name="TotalCompletion" type="HBoxContainer" parent="Control/sprite/StatContainer/VBoxContainer" unique_id=1087153861]
+layout_mode = 2
+
+[node name="title" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/TotalCompletion" unique_id=484288248]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "Total Completion"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="value" type="Label" parent="Control/sprite/StatContainer/VBoxContainer/TotalCompletion" unique_id=1161904197]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_colors/font_color = Color(0.245147, 0.281023, 0.362405, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.258824)
+theme_override_fonts/font = ExtResource("28")
+theme_override_font_sizes/font_size = 27
+text = "0%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="mask" type="Sprite2D" parent="Control" unique_id=558553201]
+clip_children = 1
+texture = ExtResource("22")
+
+[node name="icon" type="TextureRect" parent="Control/mask" unique_id=1857917856]
+modulate = Color(1, 1, 1, 0.75)
+custom_minimum_size = Vector2(150, 0)
+offset_left = 142.0
+offset_top = -182.0
+offset_right = 357.99976
+offset_bottom = -72.0
+size_flags_horizontal = 8
+expand_mode = 1
+stretch_mode = 6
+
+[node name="rank-text" type="Label" parent="Control/mask" unique_id=1356550409]
+offset_left = 230.0
+offset_top = -148.0
+offset_right = 266.0
+offset_bottom = -95.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.332)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("30")
+theme_override_font_sizes/font_size = 50
+text = "A"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=995562430]
+libraries/ = SubResource("AnimationLibrary_0aw1l")

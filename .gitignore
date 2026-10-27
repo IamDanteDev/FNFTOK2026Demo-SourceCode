@@ -1,0 +1,10 @@
+# Godot editor cache
+.godot/
+
+# Godot export artifacts
+*.pck
+*.x86_64
+
+# OS junk
+.DS_Store
+Thumbs.db

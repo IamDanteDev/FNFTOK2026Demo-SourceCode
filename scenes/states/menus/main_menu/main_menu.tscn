@@ -1,0 +1,177 @@
+[gd_scene format=3 uid="uid://3crehgm31jbd"]
+
+[ext_resource type="Texture2D" uid="uid://v4icrrsjxqf5" path="res://scenes/states/menus/menuBG.png" id="1"]
+
+[sub_resource type="GDScript" id="GDScript_wubx0"]
+script/source = "extends Node2D
+
+#var story_mode = $StoryMode
+#var freeplay = $Freeplay
+#var settings = $Options
+#var credits = $Credits
+
+@onready var bg = $ParallaxBackground/ParallaxLayer/MenuBG
+
+var freeplay_path = preload(\"res://scenes/states/menus/freeplay_menu/freeplay_menu.tscn\")
+
+var menu_list : Array = ['story_mode', 'freeplay', 'options', 'credits']
+var menu_texture_size : Array = [Vector2(2388, 362), Vector2(1905, 348), Vector2(1830, 326), Vector2(1956, 344)]
+var menu_sprite_size : Array = [Vector2(796, 181), Vector2(635, 174), Vector2(610, 163), Vector2(652, 172)]
+var curSelected : int = 0
+var menuItems : Array = []
+var camera = Camera2D.new()
+var is_flickering : bool = false
+var can_input : bool = false
+var sound_player := AudioStreamPlayer.new()
+var bg_music := AudioStreamPlayer.new()
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	if Conductor.music_stream_player.stream == null:
+		var menu_theme = load(\"res://assets/music/freakyMenu.ogg\")
+		Conductor.play_song(menu_theme, 103)
+		Conductor.cur_song = \"menu_theme\"
+		print(Conductor.cur_song)
+
+
+	for i in range(menu_list.size()):
+		var menuItem = AnimatedSprite2D.new()
+		var sprite_frames = SpriteFrames.new()
+		var _texture_size : Vector2 = menu_texture_size[i]
+		var full_spritesheet : Texture = load(\"res://assets/sprites/menus/main_menu/buttons/\" + menu_list[i] + \".png\")
+		for a in 3:
+			var sprite_size : Vector2 = menu_sprite_size[i]
+			var frame_tex := AtlasTexture.new()
+			frame_tex.atlas = full_spritesheet
+			frame_tex.region = Rect2(Vector2(a, sprite_size.y)*Vector2(sprite_size.x, 1),sprite_size)
+			if !sprite_frames.has_animation(\"selected\"):
+				sprite_frames.add_animation(\"selected\")
+				sprite_frames.set_animation_speed(\"selected\", 24)
+			sprite_frames.add_frame(\"selected\",frame_tex)
+
+		for b in 3:
+			var sprite_size : Vector2 = menu_sprite_size[i]
+			var frame_tex := AtlasTexture.new()
+			frame_tex.atlas = full_spritesheet
+			frame_tex.region = Rect2(Vector2(b, 0)*sprite_size,sprite_size)
+			if !sprite_frames.has_animation(\"unselected\"):
+				sprite_frames.add_animation(\"unselected\")
+				sprite_frames.set_animation_speed(\"unselected\", 24)
+			sprite_frames.add_frame(\"unselected\",frame_tex)
+
+		for c in 3:
+			var sprite_size : Vector2 = menu_sprite_size[i]
+			var frame_tex := AtlasTexture.new()
+			frame_tex.atlas = full_spritesheet
+			frame_tex.region = Rect2(Vector2(c, sprite_size.y)*Vector2(sprite_size.x, 1),sprite_size)
+			if !sprite_frames.has_animation(\"flickering\"):
+				sprite_frames.add_animation(\"flickering\")
+				sprite_frames.set_animation_speed(\"flickering\", 24)
+			sprite_frames.add_frame(\"flickering\",frame_tex)
+
+		menuItem.frames = sprite_frames
+		menuItems.append(menuItem)
+		add_child(menuItem)
+		menuItem.play(\"unselected\")
+		menuItem.position = Vector2(640,i*140)
+		
+	add_child(camera)
+	camera.position_smoothing_enabled = true
+	camera.position_smoothing_speed = 10.0
+	camera.position = Vector2(640, (curSelected * 100 + 200))
+	#camera.limit_bottom = 180 * menu_list.size()
+	camera.reset_smoothing()
+	
+	
+	add_child(sound_player)
+	updateCurSelected(0)
+	
+	can_input = true
+	
+func _input(event):
+	if can_input:
+		if event.is_action_pressed(\"down\"):
+			updateCurSelected(1)
+		
+		if event.is_action_pressed(\"up\"):
+			updateCurSelected(-1)
+			
+		if event.is_action_pressed(\"confirm\"):
+			confirmSelection()
+			
+		if event.is_action_pressed(\"cancel\"):
+			var sound_effect = load(\"res://assets/sounds/menu/menuCancel.ogg\")
+			sound_player.stream = sound_effect
+			sound_player.play()
+			Main.change_scene_transition(\"res://scenes/states/menus/title_screen/title_screen.tscn\")
+			
+func updateCurSelected(change : int):
+	
+	menuItems[curSelected].play(\"unselected\")
+	
+	curSelected += change
+	
+	if (curSelected > menu_list.size() - 1):
+		curSelected = 0
+	elif (curSelected < 0):
+		curSelected = menu_list.size() - 1
+	
+	menuItems[curSelected].play(\"selected\")
+	
+	var sound_effect = load(\"res://assets/sounds/menu/menuScroll.ogg\")
+	sound_player.stream = sound_effect
+	sound_player.play()
+	
+	camera.position = Vector2(640, ((curSelected * menu_list.size() * 10) + menu_list.size() * 40 ))
+	
+	
+func confirmSelection():
+	can_input = false
+	var sound_effect = load(\"res://assets/sounds/menu/menuConfirm_3.ogg\")
+	sound_player.stream = sound_effect
+	sound_player.play()
+	
+	for i in menu_list.size():
+		if i == curSelected:
+			continue
+		var tween = get_tree().create_tween()
+		tween.tween_property(menuItems[i], \"modulate:a\", 0, 0.4).from_current().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	for i in 8:
+		menuItems[curSelected].visible = false
+		await get_tree().create_timer(0.06).timeout
+		menuItems[curSelected].visible = true
+		await get_tree().create_timer(0.06).timeout
+		
+	match menu_list[curSelected]:
+		\"freeplay\":
+			menuItems[curSelected].visible = false
+			Main.change_scene_transition(\"res://scenes/states/menus/freeplay_menu/freeplay_menu.tscn\")
+		
+		\"story_mode\":
+			menuItems[curSelected].visible = false
+			Main.change_scene_transition(\"res://scenes/states/menus/story_menu/story_menu.tscn\")
+
+		\"options\":
+			menuItems[curSelected].visible = false
+			Main.change_scene_transition(\"res://scenes/states/menus/options_menu/options_menu.tscn\")
+
+		\"credits\":
+			menuItems[curSelected].visible = false
+"
+
+[node name="main_menu" type="Node2D" unique_id=819635703]
+script = SubResource("GDScript_wubx0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1591711548]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1904716242]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1889883625]
+position = Vector2(0, -77)
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="MenuBG" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=2051584907]
+z_index = -100
+position = Vector2(655, 415)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1")

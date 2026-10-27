@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://d4gjtghnrhppn"]
+
+[ext_resource type="Script" uid="uid://baixlos45lk2f" path="res://scenes/game/hud/time_bar/time_bar.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://6prq12j7vvpf" path="res://scenes/game/hud/time_bar/time_bar.png" id="2"]
+[ext_resource type="FontFile" uid="uid://db8o3ho7eo0xj" path="res://assets/resources/fonts/FOT-PopJoyStd-B.otf" id="3"]
+
+[sub_resource type="Theme" id="Theme_5tg6m"]
+
+[node name="TimeBar" type="Node2D"]
+script = ExtResource("1")
+
+[node name="ProgressBar" type="TextureProgressBar" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -10.0
+offset_right = 200.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+step = 0.01
+texture_under = ExtResource("2")
+texture_progress = ExtResource("2")
+tint_under = Color(0, 0, 0, 1)
+tint_over = Color(1, 1, 1, 0)
+
+[node name="TimeLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -20.0
+offset_right = 45.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_5tg6m")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 35
+text = "0:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 1
+metadata/_edit_use_anchors_ = true

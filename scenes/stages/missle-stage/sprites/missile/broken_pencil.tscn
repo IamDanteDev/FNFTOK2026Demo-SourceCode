@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://v3u35u627aa2"]
+
+[ext_resource type="Texture2D" uid="uid://bcqi6pigmyi0w" path="res://scenes/stages/missle-stage/sprites/missile/Missile_Pencil-1.png" id="1"]
+[ext_resource type="Script" uid="uid://ppine267ume4" path="res://scenes/stages/missle-stage/sprites/missile/broken_pencil.gd" id="2"]
+
+[node name="BrokenPencil" type="Sprite2D" unique_id=1726480425]
+rotation = 0.9715528
+texture = ExtResource("1")
+offset = Vector2(-56.814804, -41.876335)
+flip_v = true
+script = ExtResource("2")

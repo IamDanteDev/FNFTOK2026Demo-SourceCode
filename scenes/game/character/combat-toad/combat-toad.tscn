@@ -1,0 +1,212 @@
+[gd_scene format=3 uid="uid://ls3vmxq43epp"]
+
+[ext_resource type="Script" uid="uid://ch1qwb4e6b73t" path="res://scenes/game/character/character.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cpapu8uhhqyip" path="res://cutscenes/images/icons/icon-combat-toad.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bicu5n74ceudb" path="res://scenes/game/character/combat-toad/Idle-3-sheet.png" id="3"]
+
+[sub_resource type="Animation" id="Animation_cc5v1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_hbhp0"]
+resource_name = "idle"
+length = 0.727282
+step = 0.0909091
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0909091, 0.181818, 0.272727, 0.363636, 0.454545, 0.545455, 0.636364),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 5, 6, 7, 0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_8tj7y"]
+resource_name = "sing_down"
+length = 0.333342
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [20, 21, 22, 23]
+}
+
+[sub_resource type="Animation" id="Animation_vf2tl"]
+resource_name = "sing_down_hold"
+length = 0.250008
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [22, 23]
+}
+
+[sub_resource type="Animation" id="Animation_v1umi"]
+resource_name = "sing_left"
+length = 0.333342
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_ipspg"]
+resource_name = "sing_left_hold"
+length = 0.250008
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_w0k2g"]
+resource_name = "sing_right"
+length = 0.333342
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_37dom"]
+resource_name = "sing_right_hold"
+length = 0.250008
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_x0giv"]
+resource_name = "sing_up"
+length = 0.333342
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [16, 17, 18, 19]
+}
+
+[sub_resource type="Animation" id="Animation_bce4m"]
+resource_name = "sing_up_hold"
+length = 0.250008
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [18, 19]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5i8ka"]
+_data = {
+&"RESET": SubResource("Animation_cc5v1"),
+&"idle": SubResource("Animation_hbhp0"),
+&"sing_down": SubResource("Animation_8tj7y"),
+&"sing_down_hold": SubResource("Animation_vf2tl"),
+&"sing_left": SubResource("Animation_v1umi"),
+&"sing_left_hold": SubResource("Animation_ipspg"),
+&"sing_right": SubResource("Animation_w0k2g"),
+&"sing_right_hold": SubResource("Animation_37dom"),
+&"sing_up": SubResource("Animation_x0giv"),
+&"sing_up_hold": SubResource("Animation_bce4m")
+}
+
+[node name="Character" type="Node2D" unique_id=822267793]
+script = ExtResource("1")
+icon = ExtResource("2")
+healthbar_color = Color(0.74509805, 0.18039216, 0.03137255, 1)
+flip_x = true
+path_animation_player = NodePath("Sprite2D/AnimationPlayer")
+path_sprite = NodePath("")
+path_camera_pos = NodePath("Camera_Pos")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2039776379]
+use_parent_material = true
+position = Vector2(-15, -147)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3")
+hframes = 5
+vframes = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=92800784]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_5i8ka")
+autoplay = &"idle"
+
+[node name="Camera_Pos" type="Marker2D" parent="." unique_id=1323526951]
+position = Vector2(196, -354)

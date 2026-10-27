@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://dxivqr2lc6l2g"]
+
+[ext_resource type="Script" uid="uid://co5f1eevakw0t" path="res://scenes/game/stage/stage.gd" id="1"]
+[ext_resource type="Script" uid="uid://bf5ng3vmc4rno" path="res://scenes/stages/picnic-stage/sprites.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cj8j5ou4qhal7" path="res://scenes/stages/picnic-stage/Untitled_Artwork-1.png" id="3"]
+[ext_resource type="Script" uid="uid://hoxvg8iqm7du" path="res://assets/resources/shaders/psudo_3D.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://bycmea8jje1jl" path="res://scenes/stages/picnic-stage/Untitled_Artwork-2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dua64flyp3n6y" path="res://scenes/stages/picnic-stage/Untitled_Artwork-3.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://byyiuec5s1oqe" path="res://scenes/stages/picnic-stage/Untitled_Artwork-4.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cypp8ric2rmhs" path="res://scenes/stages/picnic-stage/Untitled_Artwork-5.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dwwx25vtl7h57" path="res://scenes/stages/picnic-stage/Untitled_Artwork-6.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bmebv78sgyx3v" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-1.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://u5vc1jf7cwf" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-2.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://m3ocbhkyphhw" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-3.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://d4cy1tatyy2rq" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-4.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cnik8v84imm0l" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-5.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cdt5xijwjmmti" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-6.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://c108jmdcity1r" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-7.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://codth7yo776c0" path="res://scenes/stages/picnic-stage/bf_fellas/Bg_Fellas-8.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://baheyknclaqky" path="res://scenes/states/menus/main_menu/sprites/filterw.png" id="18"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5ojx8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_spu2c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 12.0
+}]
+
+[node name="Stage" type="Node2D" unique_id=1481556930 node_paths=PackedStringArray("player_cam_override")]
+script = ExtResource("1")
+camera_zoom = Vector2(0.61, 0.61)
+player_position = Vector2(770, 100)
+player_cam_override = NodePath("Positions/bfcamoverride")
+enemy_position = Vector2(100, 100)
+gf_position = Vector2(400, 130)
+offset_amount = 10.0
+stage_center = NodePath("Positions/StageCenter")
+
+[node name="Positions" type="Node" parent="." unique_id=1522664155]
+
+[node name="GFPosition" type="Marker2D" parent="Positions" unique_id=666105446]
+position = Vector2(106, 373)
+
+[node name="PlayerPosition" type="Marker2D" parent="Positions" unique_id=346315445]
+position = Vector2(476, 414)
+
+[node name="EnemyPosition" type="Marker2D" parent="Positions" unique_id=151541191]
+position = Vector2(-420, 414)
+
+[node name="RatingPosition" type="Marker2D" parent="Positions" unique_id=1832836943]
+position = Vector2(0, 5)
+
+[node name="StageCenter" type="Marker2D" parent="Positions" unique_id=2095475276]
+position = Vector2(69, 60)
+
+[node name="bfcamoverride" type="Marker2D" parent="Positions" unique_id=1595274009]
+position = Vector2(122, 60)
+
+[node name="sprites" type="Node2D" parent="." unique_id=820602181]
+script = ExtResource("2")
+
+[node name="sky" type="Sprite2D" parent="sprites" unique_id=1593258976]
+position = Vector2(-0.0177431, -2.07424e-05)
+scale = Vector2(0.87987, 0.87987)
+texture = ExtResource("3")
+script = ExtResource("4")
+ObjectWeight = -0.2
+
+[node name="cliff1" type="Sprite2D" parent="sprites" unique_id=1360376960]
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("5")
+script = ExtResource("4")
+ObjectWeight = -0.1
+
+[node name="cliffs2" type="Sprite2D" parent="sprites" unique_id=127386160]
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("6")
+script = ExtResource("4")
+ObjectWeight = -0.05
+
+[node name="ground" type="Sprite2D" parent="sprites" unique_id=1250824114]
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("7")
+
+[node name="forground" type="Sprite2D" parent="sprites" unique_id=1865416663]
+z_index = 2
+position = Vector2(-702, 0)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("8")
+script = ExtResource("4")
+ObjectWeight = 0.4
+
+[node name="UntitledArtwork-6" type="Sprite2D" parent="sprites" unique_id=300196282]
+z_index = 2
+position = Vector2(757, 0)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("9")
+script = ExtResource("4")
+ObjectWeight = 0.4
+
+[node name="folded-toad" type="AnimatedSprite2D" parent="sprites" unique_id=1025251641]
+position = Vector2(-697, 216)
+scale = Vector2(0.88, 0.88)
+sprite_frames = SubResource("SpriteFrames_5ojx8")
+animation = &"idle"
+
+[node name="toad" type="AnimatedSprite2D" parent="sprites" unique_id=353051470]
+position = Vector2(-773, 188)
+scale = Vector2(0.88, 0.88)
+sprite_frames = SubResource("SpriteFrames_spu2c")
+animation = &"idle"
+
+[node name="Characters" type="Node2D" parent="." unique_id=1996820161]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1739033411]
+layer = 0
+
+[node name="Filter2" type="Sprite2D" parent="CanvasLayer" unique_id=1747689446]
+modulate = Color(0, 0, 0, 0.3)
+position = Vector2(640, 360)
+texture = ExtResource("18")

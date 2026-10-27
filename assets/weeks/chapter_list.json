@@ -1,0 +1,17 @@
+{
+	"ch1": 
+	{
+	"subtitle": "Chapter One Title",
+	"description": "Description of the events of Chapter One Goes here",
+	"songs" :	["picnic-road", "red-streamer-battle", "missile-maestro"],
+	"locked":	[],
+	},
+
+	"ch3": 
+	{
+	"subtitle": "Chapter Three Title",
+	"description": "Description of the events of Chapter Three Goes here",
+	"songs" :	["disco-devil"],
+	"locked":	[],
+	},
+}

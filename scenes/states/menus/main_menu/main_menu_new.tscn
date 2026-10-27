@@ -1,0 +1,353 @@
+[gd_scene format=3 uid="uid://frd5y68nxh83"]
+
+[ext_resource type="Script" uid="uid://crbjx0mfpxhcr" path="res://scenes/states/menus/main_menu/main_menu_new.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cseny0v4oxxw5" path="res://scenes/states/menus/main_menu/sprites/Background.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://d0fegpqr8wci4" path="res://scenes/states/menus/main_menu/sprites/storymode.png" id="3"]
+[ext_resource type="Shader" uid="uid://cbcd27mlavcxb" path="res://assets/resources/shaders/dissolve.gdshader" id="4"]
+[ext_resource type="Texture2D" uid="uid://5wpkd0usdybn" path="res://scenes/states/menus/main_menu/sprites/demo_lock-1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bt38pmeg2hccu" path="res://scenes/states/menus/main_menu/sprites/demo_lock-2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://c04oathqoanvo" path="res://scenes/states/menus/main_menu/sprites/story_mode_shadow.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://5fciy66dwjf4" path="res://scenes/states/menus/main_menu/sprites/freeplay.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://buikap8ylbrgc" path="res://scenes/states/menus/main_menu/sprites/freeplay_selected_1.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://q4ugw2jfh2bs" path="res://scenes/states/menus/main_menu/sprites/freeplay_selected_2.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dge0ysh07tvgx" path="res://scenes/states/menus/main_menu/sprites/freeplay_shadow.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bfqwl2co02yaa" path="res://scenes/states/menus/main_menu/sprites/shop.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cbn4sii80sxl8" path="res://scenes/states/menus/main_menu/sprites/shop_shadow.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://fcbowygq1j7r" path="res://scenes/states/menus/main_menu/sprites/settings.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://jorq6mphbdjs" path="res://scenes/states/menus/main_menu/sprites/settings_selected_1.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://kk56c4ghdadr" path="res://scenes/states/menus/main_menu/sprites/settings_selected_2.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://drcgef67j8u4n" path="res://scenes/states/menus/main_menu/sprites/settings_shadow.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://7a6fw7bb2hds" path="res://scenes/states/menus/main_menu/sprites/credits.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://i6v7iwdpyjyp" path="res://scenes/states/menus/main_menu/sprites/credits_selected_1.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bblutrwjvbyhy" path="res://scenes/states/menus/main_menu/sprites/credits_selected_2.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://bwhvc26g1jlob" path="res://scenes/states/menus/main_menu/sprites/credits_shadow.png" id="21"]
+[ext_resource type="AudioStream" uid="uid://b3u3wfw44hvm3" path="res://assets/sounds/menu/menuIn.ogg" id="22"]
+[ext_resource type="Texture2D" uid="uid://ca04f3p0ptqkj" path="res://scenes/states/menus/main_menu/sprites/filter.png" id="23"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5iw12"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_myeom"]
+noise = SubResource("FastNoiseLite_5iw12")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_myhe0"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_myeom")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ptjfd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_b7so7"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8yohl"]
+noise = SubResource("FastNoiseLite_b7so7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ih0ln"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_8yohl")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_uplp5"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yqh7y"]
+noise = SubResource("FastNoiseLite_uplp5")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ickiq"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_yqh7y")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wx2ck"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1xoti"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1pxfs"]
+noise = SubResource("FastNoiseLite_1xoti")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ywhgr"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_1pxfs")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_f6q6i"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_dy5ht"]
+noise = SubResource("FastNoiseLite_f6q6i")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nv0ci"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_dy5ht")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_swa63"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_evtqp"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_nvx2t"]
+noise = SubResource("FastNoiseLite_evtqp")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_swse8"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_nvx2t")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pedqm"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3ntak"]
+noise = SubResource("FastNoiseLite_pedqm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fporn"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_3ntak")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_di6y1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tc2f7"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_xelhy"]
+noise = SubResource("FastNoiseLite_tc2f7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ym4y0"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_xelhy")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xkqc2"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_cy2b1"]
+noise = SubResource("FastNoiseLite_xkqc2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xmth2"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_cy2b1")
+shader_parameter/dissolve_value = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jt1y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_i02cc"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_28sb0"]
+noise = SubResource("FastNoiseLite_i02cc")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b4k28"]
+shader = ExtResource("4")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_28sb0")
+shader_parameter/dissolve_value = 1.0
+
+[node name="MainMenuNew" type="Node2D" unique_id=457834985 node_paths=PackedStringArray("camera", "sfx_player", "options_node")]
+script = ExtResource("1")
+camera = NodePath("Camera2D")
+sfx_player = NodePath("AudioStreamPlayer")
+options_node = NodePath("options")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=958372833]
+offset_left = -1447.0
+offset_top = -512.0
+offset_right = 1532.0
+offset_bottom = 537.0
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1809236793]
+texture = ExtResource("2")
+
+[node name="options" type="Node" parent="." unique_id=594251096]
+
+[node name="story_mode" type="Node2D" parent="options" unique_id=1392340046]
+position = Vector2(-988, -41)
+
+[node name="unselected" type="Sprite2D" parent="options/story_mode" unique_id=764376771]
+texture = ExtResource("3")
+
+[node name="selected" type="AnimatedSprite2D" parent="options/story_mode" unique_id=515097007]
+material = SubResource("ShaderMaterial_myhe0")
+position = Vector2(3, -1)
+sprite_frames = SubResource("SpriteFrames_ptjfd")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.0056548514
+
+[node name="StorymodeShadow" type="Sprite2D" parent="options/story_mode/selected" unique_id=902537198]
+visible = false
+modulate = Color(1, 1, 1, 0.2)
+show_behind_parent = true
+material = SubResource("ShaderMaterial_ih0ln")
+position = Vector2(25, 1)
+texture = ExtResource("7")
+
+[node name="freeplay" type="Node2D" parent="options" unique_id=1955020639]
+position = Vector2(-497, 104)
+
+[node name="unselected" type="Sprite2D" parent="options/freeplay" unique_id=1859196095]
+texture = ExtResource("8")
+
+[node name="selected" type="AnimatedSprite2D" parent="options/freeplay" unique_id=273527252]
+material = SubResource("ShaderMaterial_ickiq")
+position = Vector2(6, -21)
+sprite_frames = SubResource("SpriteFrames_wx2ck")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.829253
+
+[node name="FreeplayShadow" type="Sprite2D" parent="options/freeplay/selected" unique_id=1445067524]
+modulate = Color(1, 1, 1, 0.2)
+show_behind_parent = true
+material = SubResource("ShaderMaterial_ywhgr")
+texture = ExtResource("11")
+
+[node name="shop" type="Node2D" parent="options" unique_id=445915193]
+position = Vector2(-80, -118)
+
+[node name="unselected" type="Sprite2D" parent="options/shop" unique_id=744417532]
+texture = ExtResource("12")
+
+[node name="selected" type="AnimatedSprite2D" parent="options/shop" unique_id=870169148]
+material = SubResource("ShaderMaterial_nv0ci")
+position = Vector2(4, 0)
+sprite_frames = SubResource("SpriteFrames_swa63")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.382872
+
+[node name="ShopShadow" type="Sprite2D" parent="options/shop/selected" unique_id=89406845]
+visible = false
+modulate = Color(1, 1, 1, 0.2)
+show_behind_parent = true
+material = SubResource("ShaderMaterial_swse8")
+position = Vector2(-6, 4)
+texture = ExtResource("13")
+
+[node name="settings" type="Node2D" parent="options" unique_id=868786242]
+position = Vector2(499, -30)
+
+[node name="undelected" type="Sprite2D" parent="options/settings" unique_id=933989508]
+texture = ExtResource("14")
+
+[node name="selected" type="AnimatedSprite2D" parent="options/settings" unique_id=1193679585]
+material = SubResource("ShaderMaterial_fporn")
+position = Vector2(20, 11)
+sprite_frames = SubResource("SpriteFrames_di6y1")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.933488
+
+[node name="SettingsShadow" type="Sprite2D" parent="options/settings/selected" unique_id=1181409144]
+modulate = Color(1, 1, 1, 0.2)
+show_behind_parent = true
+material = SubResource("ShaderMaterial_ym4y0")
+texture = ExtResource("17")
+
+[node name="credits" type="Node2D" parent="options" unique_id=2097884041]
+position = Vector2(1118, 105)
+
+[node name="unselected" type="Sprite2D" parent="options/credits" unique_id=20435502]
+texture = ExtResource("18")
+
+[node name="selected" type="AnimatedSprite2D" parent="options/credits" unique_id=1450625868]
+material = SubResource("ShaderMaterial_xmth2")
+position = Vector2(12, 25)
+sprite_frames = SubResource("SpriteFrames_7jt1y")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.819991
+
+[node name="CreditsShadow" type="Sprite2D" parent="options/credits/selected" unique_id=486047832]
+modulate = Color(1, 1, 1, 0.2)
+show_behind_parent = true
+material = SubResource("ShaderMaterial_b4k28")
+position = Vector2(-4, 0)
+texture = ExtResource("21")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1899005651]
+stream = ExtResource("22")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1216291542]
+
+[node name="Filter" type="Sprite2D" parent="CanvasLayer" unique_id=286360957]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(640, 360)
+texture = ExtResource("23")
+
+[node name="darkness" type="ColorRect" parent="." unique_id=1822790405]
+modulate = Color(0, 0, 0, 0)
+z_index = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2000.0
+offset_top = -752.0
+offset_right = 2002.0
+offset_bottom = 757.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1305899178]
+z_index = 1
+position = Vector2(-988, -41)
+zoom = Vector2(0.76, 0.76)
+limit_left = -1945
+limit_top = -609
+limit_right = 1945
+limit_bottom = 608
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0

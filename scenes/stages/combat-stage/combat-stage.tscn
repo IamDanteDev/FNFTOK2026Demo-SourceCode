@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cdhkhb56tmg0c"]
+
+[ext_resource type="Script" uid="uid://co5f1eevakw0t" path="res://scenes/game/stage/stage.gd" id="1"]
+[ext_resource type="Script" uid="uid://cpijuba6cxrrl" path="res://scripts/nodes/game/dodge_script.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cl4e5tco7kkay" path="res://scenes/stages/picnic-stage/Background.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://yk3jls5tkkg1" path="res://scenes/stages/picnic-stage/Ground.png" id="4"]
+
+[node name="Stage" type="Node2D"]
+script = ExtResource("1")
+camera_zoom = Vector2(0.7, 0.7)
+player_position = Vector2(770, 100)
+enemy_position = Vector2(100, 100)
+gf_position = Vector2(400, 130)
+gf_size = 0.9
+stage_center = NodePath("Positions/StageCenter")
+
+[node name="dodge_mechanic" type="Node2D" parent="." node_paths=PackedStringArray("stage")]
+script = ExtResource("2")
+stage = NodePath("..")
+dodge_cooldown_time = 0.75
+dodge_beat_starts = [0, 18]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="Positions" type="Node" parent="."]
+
+[node name="PlayerPosition" type="Marker2D" parent="Positions"]
+position = Vector2(369.4, 291)
+
+[node name="EnemyPosition" type="Marker2D" parent="Positions"]
+position = Vector2(-402.6, 291)
+
+[node name="GFPosition" type="Marker2D" parent="Positions"]
+position = Vector2(-23, 85)
+
+[node name="RatingPosition" type="Marker2D" parent="Positions"]
+position = Vector2(392.4, -235)
+
+[node name="StageCenter" type="Marker2D" parent="Positions"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(279.4, -764)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3")
+
+[node name="Ground" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(284.4, -348)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4")

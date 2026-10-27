@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://rupl8dji1urs"]
+
+[ext_resource type="Texture2D" uid="uid://cfttm8iyns1rs" path="res://scenes/game/hud/countdown/countdown-tok.png" id="1"]
+[ext_resource type="Script" uid="uid://ripp1olh1sfe" path="res://scenes/game/hud/countdown/countdown.gd" id="2"]
+
+[node name="Countdown" type="Sprite2D" unique_id=613117518]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1")
+hframes = 4
+script = ExtResource("2")

@@ -1,0 +1,383 @@
+[gd_scene format=3 uid="uid://5cun73xvfg2r"]
+
+[ext_resource type="Script" uid="uid://ituhxtjeyfp8" path="res://scenes/states/menus/title_screen/title_screen.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dylx37pavohoj" path="res://scenes/states/menus/title_screen/sprites/Title.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://doux7u7xr5i7h" path="res://scenes/states/menus/title_screen/sprites/title_characters.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bxrk04kr6n4xo" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b0xvfoh64wknj" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c57kw00251nl5" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-4.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://caoaxs0ynvcyy" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-5.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://b1nelv0jm80ir" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-6.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://ogndhsctg4uk" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-7.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cnpq8wi5vcth7" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-8.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dfu2iqaorq0dk" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-9.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://deibnvps52bmt" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-10.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://d21tp8k23d5i6" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-11.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bjqnb21mcqg6k" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-12.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://1kqdmjm4emyh" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-13.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://b3iemfuisdtfx" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-1.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://biajmyc1cpnsm" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-14.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://doivr7t15j47n" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-15.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://voco6ym41obv" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-16.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cpr4tnqspobkp" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-17.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://cw4t1nm2aommt" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-18.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://njk5jjxpthse" path="res://scenes/states/menus/title_screen/sprites/olly_and_peach/Olly_And_Peach-19.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bsc06xcyvegqw" path="res://scenes/states/menus/title_screen/sprites/title_logo.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://dw17a8hop26cy" path="res://scenes/states/menus/title_screen/sprites/title_enter.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://c5hoigiygck1g" path="res://scenes/states/menus/title_screen/sprites/title_scroll.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bcoa72wuh5anw" path="res://scenes/states/menus/title_screen/sprites/old_logo.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://yabsofj6mk5r" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-25.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://c0rljeqlp2iva" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-26.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://802qo7l2exyk" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-27.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://dq5s4qrms4ij1" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-28.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://mtt8lfn86wc2" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-29.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://dywe13aowgoh6" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-30.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://baivuws3i8apa" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-31.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://con8xx5sf0upd" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-32.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://cdiv71xp1dtpp" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-1.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://1w3kfl2t3lru" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-2.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://caaycmwe4d15g" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-3.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://c7e8imwgepmc7" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-4.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://b2mddfggs4nhy" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-5.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://c67dk2y5kulci" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-6.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://c0o07a21vy2t5" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-7.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://bukeifla0xebb" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-8.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://55bwa4nwluor" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-9.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://pfttnkn6s8dy" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-10.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://tb7h24x1vghf" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-11.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://cxbmcnkyj057w" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-12.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://cavhdqdgtr1cy" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-33.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://fpr1wu58bm5n" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-34.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://dox1btibj06s5" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-35.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://ldnruohvba43" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-36.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://dcjh1a7m6c7mc" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-37.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://ds2g6o4uf6xfp" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-38.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://djj1vkwpf7pnb" path="res://scenes/states/menus/title_screen/sprites/remastered/Remastered-39.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://dk2gr42xix6p5" path="res://scenes/states/menus/title_screen/sprites/godot_paper_logo.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://ca04f3p0ptqkj" path="res://scenes/states/menus/main_menu/sprites/filter.png" id="55"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wosfr"]
+atlas = ExtResource("3")
+region = Rect2(0, 0, 1245, 1041)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xudf"]
+atlas = ExtResource("3")
+region = Rect2(1245, 0, 1245, 1041)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45e76"]
+atlas = ExtResource("3")
+region = Rect2(2490, 0, 1245, 1041)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1drgr"]
+atlas = ExtResource("3")
+region = Rect2(0, 1041, 1245, 1041)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jdt4"]
+atlas = ExtResource("3")
+region = Rect2(1245, 1041, 1245, 1041)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b10ne"]
+atlas = ExtResource("3")
+region = Rect2(2490, 1041, 1245, 1041)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_34gtu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wosfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xudf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45e76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1drgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jdt4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b10ne")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oq8ba"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
+"loop": false,
+"name": &"emerge",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}],
+"loop": true,
+"name": &"present",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16")
+}],
+"loop": false,
+"name": &"vaccant",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}],
+"loop": false,
+"name": &"vanish",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bby0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34")
+}],
+"loop": false,
+"name": &"halt",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}],
+"loop": true,
+"name": &"run",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}],
+"loop": false,
+"name": &"throw",
+"speed": 12.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=652250918]
+script = ExtResource("1")
+
+[node name="BG" type="ColorRect" parent="." unique_id=2019912057]
+offset_right = 1280.0
+offset_bottom = 1440.0
+
+[node name="castle" type="Sprite2D" parent="." unique_id=112173011]
+position = Vector2(641, 360)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("2")
+
+[node name="characters" type="AnimatedSprite2D" parent="." unique_id=2095312804]
+position = Vector2(854.653, 359.563)
+scale = Vector2(0.669669, 0.669669)
+sprite_frames = SubResource("SpriteFrames_34gtu")
+frame_progress = 0.0492275
+
+[node name="olly" type="AnimatedSprite2D" parent="." unique_id=644767189]
+position = Vector2(1002.38, 207.794)
+scale = Vector2(0.398021, 0.398074)
+sprite_frames = SubResource("SpriteFrames_oq8ba")
+animation = &"present"
+autoplay = "vaccant"
+frame_progress = 0.923131
+
+[node name="TitleLogo" type="Sprite2D" parent="." unique_id=1550668918]
+position = Vector2(262, 398)
+scale = Vector2(0.0860055, 0.0860055)
+texture = ExtResource("23")
+
+[node name="TitleEnter" type="Sprite2D" parent="." unique_id=2045072517]
+position = Vector2(263, 592)
+scale = Vector2(0.085, 0.085)
+texture = ExtResource("24")
+
+[node name="whiteScreen" type="ColorRect" parent="." unique_id=1474077035]
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="introBG" type="ColorRect" parent="." unique_id=1874049057]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="fake_out_bg" type="Sprite2D" parent="." unique_id=547999524]
+position = Vector2(1097.86, 291.145)
+texture = ExtResource("25")
+
+[node name="fake_out_bg2" type="Sprite2D" parent="fake_out_bg" unique_id=817108481]
+position = Vector2(2242, 0)
+texture = ExtResource("25")
+
+[node name="fake_out_logo" type="Sprite2D" parent="." unique_id=1340811679]
+position = Vector2(640, 173.89)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("26")
+
+[node name="fake_out_characters" type="AnimatedSprite2D" parent="." unique_id=1821594618]
+position = Vector2(720, 360)
+scale = Vector2(0.666667, 0.666667)
+sprite_frames = SubResource("SpriteFrames_bby0d")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.735198
+
+[node name="godotLogo" type="Sprite2D" parent="." unique_id=251944244]
+position = Vector2(640, 440)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("54")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1770648824]
+physics_interpolation_mode = 2
+position = Vector2(640, 360)
+
+[node name="black" type="ColorRect" parent="." unique_id=1757517550]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1375676425]
+
+[node name="Filter" type="Sprite2D" parent="CanvasLayer" unique_id=994861912]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(640, 360)
+texture = ExtResource("55")

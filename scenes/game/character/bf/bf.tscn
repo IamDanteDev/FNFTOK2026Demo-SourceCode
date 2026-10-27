@@ -1,0 +1,1546 @@
+[gd_scene format=3 uid="uid://7yddtpr4q3cl"]
+
+[ext_resource type="Script" uid="uid://ch1qwb4e6b73t" path="res://scenes/game/character/character.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dmd6vsxd1t3xn" path="res://scenes/game/character/bf/icon-bf-classic.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://q6rafwr3ynu7" path="res://scenes/game/character/bf/sheets/bf-mask-full.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cr7sfxfg2wwes" path="res://scenes/game/character/bf/sheets/bf-mask.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://doqrbkdcw3u5b" path="res://scenes/game/character/bf/sheets/new/happy/happy1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://8fououv45vrg" path="res://scenes/game/character/bf/sheets/new/happy/happy2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dt56hiu4pujtl" path="res://scenes/game/character/bf/sheets/new/happy/happy3.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bkxsii8fklbfg" path="res://scenes/game/character/bf/sheets/new/happy/happy4.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://daho8ohgt2xbe" path="res://scenes/game/character/bf/sheets/new/happy/happy5.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b4kwojsw0mnq0" path="res://scenes/game/character/bf/sheets/new/happy/happy6.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dbht2l5w4yuak" path="res://scenes/game/character/bf/sheets/new/happy/happy7.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://b4cu1hbesfuhx" path="res://scenes/game/character/bf/sheets/new/happy/happy8.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://ca4bcxwgdnd" path="res://scenes/game/character/bf/sheets/new/happy/happy9.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cren688r20v8i" path="res://scenes/game/character/bf/sheets/new/happy/happy10.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dgo5pm24tnphj" path="res://scenes/game/character/bf/sheets/new/happy/happy11.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dql5b0po5firg" path="res://scenes/game/character/bf/sheets/new/happy/happy12.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://114jilv85h8" path="res://scenes/game/character/bf/sheets/new/happy/happy13.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://2ti4m8cxsbrp" path="res://scenes/game/character/bf/sheets/new/happy/happy14.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bu17k4y4m6py4" path="res://scenes/game/character/bf/sheets/new/happy/happy15.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://dd28s2abj0bx7" path="res://scenes/game/character/bf/sheets/new/happy/happy16.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://c01xi7lpkrd26" path="res://scenes/game/character/bf/sheets/new/happy/happy17.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dnl3l7wfboc00" path="res://scenes/game/character/bf/sheets/new/happy/happy18.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://cdpjhuajwsaf2" path="res://scenes/game/character/bf/sheets/new/happy/happy19.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://dugr7ao3y3fv7" path="res://scenes/game/character/bf/sheets/new/happy/happy20.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://fwmq2aq27cax" path="res://scenes/game/character/bf/sheets/new/happy/happy21.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://jtyhtctn1dc2" path="res://scenes/game/character/bf/sheets/new/happy/happy22.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://usokshikj3ko" path="res://scenes/game/character/bf/sheets/new/happy/happy23.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://bltniuasghhbd" path="res://scenes/game/character/bf/sheets/new/happy/happy24.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://q84rfy4bomwm" path="res://scenes/game/character/bf/sheets/new/happy/happy25.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://6g7ybvtab4nc" path="res://scenes/game/character/bf/sheets/new/happy/happy26.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://bhx65bpku41eq" path="res://scenes/game/character/bf/sheets/new/happy/happy27.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://cjuypo1vmqfd4" path="res://scenes/game/character/bf/sheets/new/happy/happy28.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://c7riuo7vcg4qd" path="res://scenes/game/character/bf/sheets/new/happy/happy29.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://dt4b4tinynw10" path="res://scenes/game/character/bf/sheets/new/happy/happy30.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://lig3j1hk8m2h" path="res://scenes/game/character/bf/sheets/new/happy/happy31.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://5fftp3tdxl3m" path="res://scenes/game/character/bf/sheets/new/happy/happy32.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://d23sknxe87mas" path="res://scenes/game/character/bf/sheets/new/happy/happy33.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://d1es3sys4f0qt" path="res://scenes/game/character/bf/sheets/new/happy/happy34.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://cu4kgfpvls3hl" path="res://scenes/game/character/bf/sheets/new/happy/happy35.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://d3ux8pm3khch0" path="res://scenes/game/character/bf/sheets/new/happy/happy36.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://cdlkla7hllr0n" path="res://scenes/game/character/bf/sheets/new/happy/happy37.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://b1kdqvflat2hm" path="res://scenes/game/character/bf/sheets/new/happy/happy38.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://bfb01gfg4y024" path="res://scenes/game/character/bf/sheets/new/happy/happy39.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://bfl60mo00veqf" path="res://scenes/game/character/bf/sheets/new/happy/happy40.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://d1agsyxj4vooi" path="res://scenes/game/character/bf/sheets/new/happy/happy41.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://c3x3hpmomrvjs" path="res://scenes/game/character/bf/sheets/new/happy/happy42.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://ctt4sevqy3et" path="res://scenes/game/character/bf/sheets/new/happy/happy43.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://co5lj5grmgpdc" path="res://scenes/game/character/bf/sheets/new/happy/happy44.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://djyvba0n6jed" path="res://scenes/game/character/bf/sheets/new/happy/happy45.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://cira1his06d07" path="res://scenes/game/character/bf/sheets/new/happy/happy46.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://c3huebijxkoe4" path="res://scenes/game/character/bf/sheets/new/happy/happy47.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://bb5pjbsv87xc6" path="res://scenes/game/character/bf/sheets/new/happy/happy48.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://cfj17iuyb7tab" path="res://scenes/game/character/bf/sheets/new/happy/happy49.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://c3cn4dpfk184n" path="res://scenes/game/character/bf/sheets/new/happy/happy50.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://bcr0tij63a3i2" path="res://scenes/game/character/bf/sheets/new/happy/happy51.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://mqpbmfs6n27n" path="res://scenes/game/character/bf/sheets/new/mad/mad1.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://b4ow8ijmijrer" path="res://scenes/game/character/bf/sheets/new/mad/mad2.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://dpsnwxorobxgd" path="res://scenes/game/character/bf/sheets/new/mad/mad3.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://bnj2f32dw55l8" path="res://scenes/game/character/bf/sheets/new/mad/mad4.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://cqyv0jesbtq2h" path="res://scenes/game/character/bf/sheets/new/mad/mad5.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://dfis443qwuu4q" path="res://scenes/game/character/bf/sheets/new/mad/mad6.png" id="61"]
+[ext_resource type="Texture2D" uid="uid://fjqv8678jm0i" path="res://scenes/game/character/bf/sheets/new/mad/mad7.png" id="62"]
+[ext_resource type="Texture2D" uid="uid://ndp27s7f58h7" path="res://scenes/game/character/bf/sheets/new/mad/mad8.png" id="63"]
+[ext_resource type="Texture2D" uid="uid://bd3ah0y8124sg" path="res://scenes/game/character/bf/sheets/new/mad/mad9.png" id="64"]
+[ext_resource type="Texture2D" uid="uid://bvitk8mlwptfk" path="res://scenes/game/character/bf/sheets/new/mad/mad10.png" id="65"]
+[ext_resource type="Texture2D" uid="uid://bjiculj88autp" path="res://scenes/game/character/bf/sheets/new/mad/mad11.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://be04pfhi0f288" path="res://scenes/game/character/bf/sheets/new/mad/mad12.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://blmndkamnvopi" path="res://scenes/game/character/bf/sheets/new/mad/mad13.png" id="68"]
+[ext_resource type="Texture2D" uid="uid://b8r4cgejqxkea" path="res://scenes/game/character/bf/sheets/new/mad/mad14.png" id="69"]
+[ext_resource type="Texture2D" uid="uid://dio701hlhp04o" path="res://scenes/game/character/bf/sheets/new/mad/mad15.png" id="70"]
+[ext_resource type="Texture2D" uid="uid://c87aaxuivoyq5" path="res://scenes/game/character/bf/sheets/new/mad/mad16.png" id="71"]
+[ext_resource type="Texture2D" uid="uid://dxaxhnlko80x5" path="res://scenes/game/character/bf/sheets/new/mad/mad17.png" id="72"]
+[ext_resource type="Texture2D" uid="uid://cp4vt75t4btfs" path="res://scenes/game/character/bf/sheets/new/mad/mad18.png" id="73"]
+[ext_resource type="Texture2D" uid="uid://dfpf1pg3r0lfa" path="res://scenes/game/character/bf/sheets/new/mad/mad19.png" id="74"]
+[ext_resource type="Texture2D" uid="uid://dh5wtjtvk64s0" path="res://scenes/game/character/bf/sheets/new/mad/mad20.png" id="75"]
+[ext_resource type="Texture2D" uid="uid://bln6ghr7rmb6c" path="res://scenes/game/character/bf/sheets/new/mad/mad21.png" id="76"]
+[ext_resource type="Texture2D" uid="uid://1f36tu4rbjet" path="res://scenes/game/character/bf/sheets/new/mad/mad22.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://dpil5e8sg3i5r" path="res://scenes/game/character/bf/sheets/new/mad/mad23.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://c0j165slhf42x" path="res://scenes/game/character/bf/sheets/new/mad/mad24.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://bg8vavr2hnivi" path="res://scenes/game/character/bf/sheets/new/mad/mad25.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://y1sx23esg0w5" path="res://scenes/game/character/bf/sheets/new/mad/mad26.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://dk342xcj756y8" path="res://scenes/game/character/bf/sheets/new/mad/mad27.png" id="82"]
+[ext_resource type="Texture2D" uid="uid://bgsanm62k0clg" path="res://scenes/game/character/bf/sheets/new/mad/mad28.png" id="83"]
+[ext_resource type="Texture2D" uid="uid://b2qd6t4yw2s2r" path="res://scenes/game/character/bf/sheets/new/mad/mad29.png" id="84"]
+[ext_resource type="Texture2D" uid="uid://cjhbu7el4jqt0" path="res://scenes/game/character/bf/sheets/new/mad/mad30.png" id="85"]
+[ext_resource type="Texture2D" uid="uid://byeiy4mj6ejxg" path="res://scenes/game/character/bf/sheets/new/mad/mad31.png" id="86"]
+[ext_resource type="Texture2D" uid="uid://b82i1gc51x0sg" path="res://scenes/game/character/bf/sheets/new/mad/mad32.png" id="87"]
+[ext_resource type="Texture2D" uid="uid://g4ffishy2n16" path="res://scenes/game/character/bf/sheets/new/mad/mad33.png" id="88"]
+[ext_resource type="Texture2D" uid="uid://eob2u22sjqvh" path="res://scenes/game/character/bf/sheets/new/mad/mad34.png" id="89"]
+[ext_resource type="Texture2D" uid="uid://v3dimt4e6y24" path="res://scenes/game/character/bf/sheets/new/mad/mad35.png" id="90"]
+[ext_resource type="Texture2D" uid="uid://bvf8r555xg5w8" path="res://scenes/game/character/bf/sheets/new/mad/mad36.png" id="91"]
+[ext_resource type="Texture2D" uid="uid://dug2il0p57m0l" path="res://scenes/game/character/bf/sheets/new/mad/mad37.png" id="92"]
+[ext_resource type="Texture2D" uid="uid://bmv5m44ggcvwy" path="res://scenes/game/character/bf/sheets/new/mad/mad38.png" id="93"]
+[ext_resource type="Texture2D" uid="uid://o7bnmt3t005u" path="res://scenes/game/character/bf/sheets/new/mad/mad39.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://b71ylhwdfq0v0" path="res://scenes/game/character/bf/sheets/new/mad/mad40.png" id="95"]
+[ext_resource type="Texture2D" uid="uid://bcjg5es8m3qlq" path="res://scenes/game/character/bf/sheets/new/mad/mad41.png" id="96"]
+[ext_resource type="Texture2D" uid="uid://tdq82s4uhql2" path="res://scenes/game/character/bf/sheets/new/mad/mad42.png" id="97"]
+[ext_resource type="Texture2D" uid="uid://c0tfyfn2icj8g" path="res://scenes/game/character/bf/sheets/new/mad/mad43.png" id="98"]
+[ext_resource type="Texture2D" uid="uid://ya4es2kks7ic" path="res://scenes/game/character/bf/sheets/new/mad/mad44.png" id="99"]
+[ext_resource type="Texture2D" uid="uid://bs12t8arjbydr" path="res://scenes/game/character/bf/sheets/new/mad/mad45.png" id="100"]
+[ext_resource type="Texture2D" uid="uid://ckub2mqetvbcw" path="res://scenes/game/character/bf/sheets/new/mad/mad46.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://cml0jis14ne0u" path="res://scenes/game/character/bf/sheets/new/mad/mad47.png" id="102"]
+[ext_resource type="Texture2D" uid="uid://c16n5pa0tmwg1" path="res://scenes/game/character/bf/sheets/new/mad/mad48.png" id="103"]
+[ext_resource type="Texture2D" uid="uid://mdrxqxl5rnvk" path="res://scenes/game/character/bf/sheets/new/mad/mad49.png" id="104"]
+[ext_resource type="Texture2D" uid="uid://qmx66ku7tau4" path="res://scenes/game/character/bf/sheets/new/mad/mad50.png" id="105"]
+[ext_resource type="Texture2D" uid="uid://dk33nph5w2vwb" path="res://scenes/game/character/bf/sheets/new/mad/mad51.png" id="106"]
+[ext_resource type="Texture2D" uid="uid://c0c68kp01pg3f" path="res://scenes/game/character/bf/sheets/new/scared/scared1.png" id="107"]
+[ext_resource type="Texture2D" uid="uid://dp3m6qs6uwv6t" path="res://scenes/game/character/bf/sheets/new/scared/scared2.png" id="108"]
+[ext_resource type="Texture2D" uid="uid://c5qi551c1m23g" path="res://scenes/game/character/bf/sheets/new/scared/scared3.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://bqfug0kw1pmn0" path="res://scenes/game/character/bf/sheets/new/scared/scared4.png" id="110"]
+[ext_resource type="Texture2D" uid="uid://qlu5s6fvqwj0" path="res://scenes/game/character/bf/sheets/new/scared/scared5.png" id="111"]
+[ext_resource type="Texture2D" uid="uid://ckqfww1ovw3oo" path="res://scenes/game/character/bf/sheets/new/scared/scared6.png" id="112"]
+[ext_resource type="Texture2D" uid="uid://dvvoe2nb6ngnd" path="res://scenes/game/character/bf/sheets/new/scared/scared7.png" id="113"]
+[ext_resource type="Texture2D" uid="uid://dyrl0ryvjl5v2" path="res://scenes/game/character/bf/sheets/new/scared/scared8.png" id="114"]
+[ext_resource type="Texture2D" uid="uid://coljw63s25ad2" path="res://scenes/game/character/bf/sheets/new/scared/scared9.png" id="115"]
+[ext_resource type="Texture2D" uid="uid://br32lehyn85n5" path="res://scenes/game/character/bf/sheets/new/scared/scared10.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://daskqh35vu2ls" path="res://scenes/game/character/bf/sheets/new/scared/scared11.png" id="117"]
+[ext_resource type="Texture2D" uid="uid://dpung2o5bondn" path="res://scenes/game/character/bf/sheets/new/scared/scared12.png" id="118"]
+[ext_resource type="Texture2D" uid="uid://bi4tofx3kp7o8" path="res://scenes/game/character/bf/sheets/new/scared/scared13.png" id="119"]
+[ext_resource type="Texture2D" uid="uid://chioyjqe3467f" path="res://scenes/game/character/bf/sheets/new/scared/scared14.png" id="120"]
+[ext_resource type="Texture2D" uid="uid://dc3nmplkn2f0y" path="res://scenes/game/character/bf/sheets/new/scared/scared15.png" id="121"]
+[ext_resource type="Texture2D" uid="uid://b50l6g7lyw0ba" path="res://scenes/game/character/bf/sheets/new/scared/scared16.png" id="122"]
+[ext_resource type="Texture2D" uid="uid://b8dpkgoc25cd" path="res://scenes/game/character/bf/sheets/new/scared/scared17.png" id="123"]
+[ext_resource type="Texture2D" uid="uid://de2lexumdis3p" path="res://scenes/game/character/bf/sheets/new/scared/scared18.png" id="124"]
+[ext_resource type="Texture2D" uid="uid://e6fwtl755xk5" path="res://scenes/game/character/bf/sheets/new/scared/scared19.png" id="125"]
+[ext_resource type="Texture2D" uid="uid://bwkahdoglocw2" path="res://scenes/game/character/bf/sheets/new/scared/scared20.png" id="126"]
+[ext_resource type="Texture2D" uid="uid://7cviwky8004f" path="res://scenes/game/character/bf/sheets/new/scared/scared21.png" id="127"]
+[ext_resource type="Texture2D" uid="uid://c108v5rt85aul" path="res://scenes/game/character/bf/sheets/new/scared/scared22.png" id="128"]
+[ext_resource type="Texture2D" uid="uid://cxidrqjjth72l" path="res://scenes/game/character/bf/sheets/new/scared/scared23.png" id="129"]
+[ext_resource type="Texture2D" uid="uid://ce0x5dn8pp7c5" path="res://scenes/game/character/bf/sheets/new/scared/scared24.png" id="130"]
+[ext_resource type="Texture2D" uid="uid://b6nvjatgel1p2" path="res://scenes/game/character/bf/sheets/new/scared/scared25.png" id="131"]
+[ext_resource type="Texture2D" uid="uid://bg4i40vjc8ba5" path="res://scenes/game/character/bf/sheets/new/scared/scared26.png" id="132"]
+[ext_resource type="Texture2D" uid="uid://cecwgt4mef0k0" path="res://scenes/game/character/bf/sheets/new/scared/scared27.png" id="133"]
+[ext_resource type="Texture2D" uid="uid://j74ifj0ajr5g" path="res://scenes/game/character/bf/sheets/new/scared/scared28.png" id="134"]
+[ext_resource type="Texture2D" uid="uid://dli1q1pdce7dw" path="res://scenes/game/character/bf/sheets/new/scared/scared29.png" id="135"]
+[ext_resource type="Texture2D" uid="uid://dhav6kgule18j" path="res://scenes/game/character/bf/sheets/new/scared/scared30.png" id="136"]
+[ext_resource type="Texture2D" uid="uid://dhv3dtoa87sya" path="res://scenes/game/character/bf/sheets/new/scared/scared31.png" id="137"]
+[ext_resource type="Texture2D" uid="uid://svyqveh2gs78" path="res://scenes/game/character/bf/sheets/new/scared/scared32.png" id="138"]
+[ext_resource type="Texture2D" uid="uid://dd0ujm62yi4le" path="res://scenes/game/character/bf/sheets/new/scared/scared33.png" id="139"]
+[ext_resource type="Texture2D" uid="uid://5utfdicuxvom" path="res://scenes/game/character/bf/sheets/new/scared/scared34.png" id="140"]
+[ext_resource type="Texture2D" uid="uid://bosyeyu10hup5" path="res://scenes/game/character/bf/sheets/new/scared/scared35.png" id="141"]
+[ext_resource type="Texture2D" uid="uid://ceqbhohb0igmh" path="res://scenes/game/character/bf/sheets/new/scared/scared36.png" id="142"]
+[ext_resource type="Texture2D" uid="uid://cwi7gqac0end2" path="res://scenes/game/character/bf/sheets/new/scared/scared37.png" id="143"]
+[ext_resource type="Texture2D" uid="uid://cco8j8rx2n4qy" path="res://scenes/game/character/bf/sheets/new/scared/scared38.png" id="144"]
+[ext_resource type="Texture2D" uid="uid://cd2fmad8xpnmq" path="res://scenes/game/character/bf/sheets/new/scared/scared39.png" id="145"]
+[ext_resource type="Texture2D" uid="uid://dcxiytl6to5aq" path="res://scenes/game/character/bf/sheets/new/scared/scared40.png" id="146"]
+[ext_resource type="Texture2D" uid="uid://yv6miuto4142" path="res://scenes/game/character/bf/sheets/new/scared/scared41.png" id="147"]
+[ext_resource type="Texture2D" uid="uid://ckhln4gtrbbgp" path="res://scenes/game/character/bf/sheets/new/scared/scared42.png" id="148"]
+[ext_resource type="Texture2D" uid="uid://dtwb57u33gj6i" path="res://scenes/game/character/bf/sheets/new/scared/scared43.png" id="149"]
+[ext_resource type="Texture2D" uid="uid://lgy7olalaw4f" path="res://scenes/game/character/bf/sheets/new/scared/scared44.png" id="150"]
+[ext_resource type="Texture2D" uid="uid://b6ct004ekyyic" path="res://scenes/game/character/bf/sheets/new/scared/scared45.png" id="151"]
+[ext_resource type="Texture2D" uid="uid://cbpdyinjopt83" path="res://scenes/game/character/bf/sheets/new/scared/scared46.png" id="152"]
+[ext_resource type="Texture2D" uid="uid://djr067x6do36y" path="res://scenes/game/character/bf/sheets/new/scared/scared47.png" id="153"]
+[ext_resource type="Texture2D" uid="uid://ccgshy3kv2w1y" path="res://scenes/game/character/bf/sheets/new/scared/scared48.png" id="154"]
+[ext_resource type="Texture2D" uid="uid://7hfdxfrfsv55" path="res://scenes/game/character/bf/sheets/new/scared/scared49.png" id="155"]
+[ext_resource type="Texture2D" uid="uid://crsojkq08php2" path="res://scenes/game/character/bf/sheets/new/scared/scared50.png" id="156"]
+[ext_resource type="Texture2D" uid="uid://nrdl87sgmqyr" path="res://scenes/game/character/bf/sheets/new/scared/scared51.png" id="157"]
+[ext_resource type="Script" uid="uid://kcm5e3kwmljf" path="res://scenes/game/character/bf/bf.gd" id="158"]
+
+[sub_resource type="Animation" id="Animation_8hgku"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:clip_children")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v03vh"]
+resource_name = "dodge"
+length = 0.833342
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.4166667, 0.5, 0.5833334, 0.66666675, 0.75, 0.8333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39, 40, 41, 42, 40, 41, 42, 40]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-23.17, 10.94)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_tm247"]
+resource_name = "hurt"
+length = 0.400005
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [43, 44, 45, 46, 47, 48, 49, 50]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -2.565)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:clip_children")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:offset")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(0, 23.145), Vector2(58.035, 21.59), Vector2(46.615, 21.59), Vector2(40.68, 21.59)]
+}
+
+[sub_resource type="Animation" id="Animation_6ftl2"]
+resource_name = "idle"
+length = 0.66667086
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833334, 0.25, 0.2916667, 0.33333334, 0.375, 0.4166667, 0.45833334, 0.5000042, 0.5416667, 0.5833334, 0.625, 0.66667086),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 9, 8, 9, 8, 9, 8]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(0, 23.145), Vector2(0.74, 21.695), Vector2(0.74, 14.495), Vector2(0.74, 0.52), Vector2(0.74, -0.355), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_qhdwj"]
+resource_name = "pose"
+length = 0.5000081
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.4166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [30, 31, 32, 33, 34, 35]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(2.015, 3.06), Vector2(-1.685, 4.17)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_n5dnp"]
+resource_name = "sing_down"
+length = 0.29167083
+step = 0.083333336
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(7.985, 0.11)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [25, 26]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-10.92, 64.545), Vector2(-10.92, 59.085)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_cn4xm"]
+resource_name = "sing_down_miss"
+length = 0.250004
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(7.985, 0.11)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [27, 28, 29]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-10.92, 59.085)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:clip_children")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2ntlb"]
+resource_name = "sing_left"
+length = 0.29167083
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.34, -1.31)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [10, 11]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-37.145, 8.585)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_yueam"]
+resource_name = "sing_left_miss"
+length = 0.250004
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.34, -1.31)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [12, 13, 14]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:offset")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-37.145, 8.585)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_nqv8s"]
+resource_name = "sing_right"
+length = 0.29167083
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.34, -1.31)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [15, 16]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(42.735, 8.585), Vector2(39.03, 7.735)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_d7wae"]
+resource_name = "sing_right_miss"
+length = 0.250004
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.505, -1.075)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [17, 18, 19]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(39.03, 7.735)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_arue7"]
+resource_name = "sing_up"
+length = 0.29167083
+step = 0.083333336
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [20, 21]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(39.03, -27.83), Vector2(39.03, -20.16)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_s1ar0"]
+resource_name = "sing_up_miss"
+length = 0.250004
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BfMask/Bf:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(4, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BfMask/Bf:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [22, 23, 24]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BfMask:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(39.03, -20.16)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BfMask:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BfMask:clip_children")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e1xfq"]
+_data = {
+&"RESET": SubResource("Animation_8hgku"),
+&"dodge": SubResource("Animation_v03vh"),
+&"hurt": SubResource("Animation_tm247"),
+&"idle": SubResource("Animation_6ftl2"),
+&"pose": SubResource("Animation_qhdwj"),
+&"sing_down": SubResource("Animation_n5dnp"),
+&"sing_down_miss": SubResource("Animation_cn4xm"),
+&"sing_left": SubResource("Animation_2ntlb"),
+&"sing_left_miss": SubResource("Animation_yueam"),
+&"sing_right": SubResource("Animation_nqv8s"),
+&"sing_right_miss": SubResource("Animation_d7wae"),
+&"sing_up": SubResource("Animation_arue7"),
+&"sing_up_miss": SubResource("Animation_s1ar0")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c4ys6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ds8ks"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y4pdr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106")
+}],
+"loop": true,
+"name": &"mad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("107")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157")
+}],
+"loop": true,
+"name": &"scared",
+"speed": 5.0
+}]
+
+[node name="Character" type="Node2D" unique_id=1704270687]
+script = ExtResource("1")
+icon = ExtResource("2")
+healthbar_color = Color(0.4509804, 0.7372549, 0.9098039, 1)
+mood = "scared"
+beat_scaled_idle = true
+beat_duration = 2.0
+path_sprite = NodePath("BfMask/Bf")
+path_camera_pos = NodePath("Camera_Pos")
+
+[node name="Camera_Pos" type="Marker2D" parent="." unique_id=1771504625]
+position = Vector2(-212, -280)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1652197045]
+libraries/ = SubResource("AnimationLibrary_e1xfq")
+autoplay = &"idle"
+
+[node name="BfMask" type="AnimatedSprite2D" parent="." unique_id=1618722409]
+clip_children = 1
+position = Vector2(2, -167)
+sprite_frames = SubResource("SpriteFrames_c4ys6")
+
+[node name="Bf" type="AnimatedSprite2D" parent="BfMask" unique_id=1162431635]
+material = SubResource("ShaderMaterial_ds8ks")
+use_parent_material = true
+position = Vector2(0, -6)
+sprite_frames = SubResource("SpriteFrames_y4pdr")
+animation = &"mad"
+frame = 8
+script = ExtResource("158")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cwob3ip0mondh"]
+
+[ext_resource type="Script" uid="uid://ch1qwb4e6b73t" path="res://scenes/game/character/character.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cb0icpkgmqdp" path="res://cutscenes/images/icons/icon-rsb-trio.png" id="2"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lrelf"]
+
+[node name="Character" type="Node2D"]
+script = ExtResource("1")
+icon = ExtResource("2")
+icon_count = 1
+healthbar_color = Color(0.8745098, 0.21960784, 0.31764707, 1)
+flip_x = true
+path_sprite = NodePath("")
+path_camera_pos = NodePath("Camera_Pos")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lrelf")
+}
+
+[node name="Camera_Pos" type="Marker2D" parent="."]
+position = Vector2(177, -280)

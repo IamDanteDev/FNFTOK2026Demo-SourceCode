@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://bc0lb7si4nu27"]
+
+[ext_resource type="Texture2D" uid="uid://d4b7f6tefg5lj" path="res://scenes/game/note/note_skins/tok-notes.png" id="1"]
+[ext_resource type="Script" uid="uid://cjhr705n6wemj" path="res://scenes/game/note/note_skins/note_skin.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://clj51vr68o2uv" path="res://scenes/game/note/note_skins/tok-note_sustains.png" id="3"]
+
+[sub_resource type="Animation" id="Animation_hsakq"]
+resource_name = "0"
+length = 0.001
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_e3pgl"]
+resource_name = "1"
+length = 0.001
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_b26me"]
+resource_name = "2"
+length = 0.001
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_d21pw"]
+resource_name = "3"
+length = 0.001
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_pv74g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m1yb4"]
+_data = {
+&"0": SubResource("Animation_hsakq"),
+&"1": SubResource("Animation_e3pgl"),
+&"2": SubResource("Animation_b26me"),
+&"3": SubResource("Animation_d21pw"),
+&"RESET": SubResource("Animation_pv74g")
+}
+
+[node name="Sprite2D" type="Sprite2D" node_paths=PackedStringArray("anim")]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1")
+vframes = 4
+script = ExtResource("2")
+anim = NodePath("AnimationPlayer")
+sustain_texture = ExtResource("3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_m1yb4")
+}

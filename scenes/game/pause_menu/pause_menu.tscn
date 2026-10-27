@@ -1,0 +1,917 @@
+[gd_scene format=3 uid="uid://08ewetos1atg"]
+
+[ext_resource type="Script" uid="uid://2e5mcasd1w67" path="res://scenes/game/pause_menu/pause_menu.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b2sngo3s5p7dj" path="res://scenes/states/menus/settings_menu/sprites/Ilustracion_sin_titulo.png" id="2"]
+[ext_resource type="Shader" uid="uid://daagrjdo7oerf" path="res://scenes/states/menus/settings_menu/tv.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://utqy74uqwqi5" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://wops5prd1jnq" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://20feetso2jjl" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-3.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dgr5k5iy30ahc" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-4.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dubfc35dkhldi" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-5.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cihdwht23qvgx" path="res://scenes/game/character/bf/portrait/Portraits_3-7.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dskdfj7f5n1li" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-6.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://d4co7cqv2oe0g" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-7.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://b5ks0rmxbpdk" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-8.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cih3prpwrbp12" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-9.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://djbd03dk8ogat" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-10.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://casx367p4xajy" path="res://scenes/game/character/rsb-trio/portrait.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://b4pg3wkk7n13" path="res://scenes/game/pause_menu/sprites/Ilustración_sin_título-11.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://b1hiowuognbtg" path="res://scenes/game/pause_menu/sprites/Guf-1.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bihf6jaoa5p50" path="res://scenes/game/pause_menu/sprites/Guf-2.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cawb7tg0mut0f" path="res://scenes/game/pause_menu/sprites/Guf-3.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://ba0o317lduxjm" path="res://scenes/game/pause_menu/sprites/Guf-4.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://c5yhpdprcgbsp" path="res://scenes/game/pause_menu/sprites/Guf-5.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://cq7h8mkmku560" path="res://scenes/game/pause_menu/sprites/Guf-6.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://dgac2r63i80tv" path="res://scenes/game/pause_menu/sprites/Guf-7.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://hd1g0s8fi6ea" path="res://scenes/game/pause_menu/sprites/Guf-8.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://b3stosv3ptvwq" path="res://scenes/game/pause_menu/sprites/Guf-9.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://1rvwhwrh6qwt" path="res://scenes/game/pause_menu/sprites/Guf-10.png" id="26"]
+[ext_resource type="Script" uid="uid://dqyh8l3udr8nv" path="res://scripts/nodes/hud/choice_menu.gd" id="27"]
+[ext_resource type="AudioStream" uid="uid://crsnwnv5orldj" path="res://assets/sounds/menu/pause.ogg" id="28"]
+[ext_resource type="FontFile" uid="uid://quqkthhlchvc" path="res://assets/resources/fonts/mariofontv3solidremake.ttf" id="29"]
+[ext_resource type="Texture2D" uid="uid://ca04f3p0ptqkj" path="res://scenes/states/menus/main_menu/sprites/filter.png" id="30"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_62ag5"]
+shader = ExtResource("3")
+shader_parameter/offset_image = null
+shader_parameter/strength = 0.2
+
+[sub_resource type="Animation" id="Animation_s4a7t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/player/0:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.9999999, 0.99999994)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/player/1:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999976, 0.9999999)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/player/2:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.9999999, 0.99999994)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/player/3:scale")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.9999999, 0.99999994)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/player/4:scale")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.9999999, 0.99999994)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/player/0:rotation")
+tracks/5/interp = 4
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/player/1:rotation")
+tracks/6/interp = 4
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D/player/2:rotation")
+tracks/7/interp = 4
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D/player/3:rotation")
+tracks/8/interp = 4
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2D/player/4:rotation")
+tracks/9/interp = 4
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Node2D/player/portrait:scale")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.3, 1.3)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Node2D/player/portrait:rotation")
+tracks/11/interp = 4
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Node2D/enemy/0:rotation")
+tracks/12/interp = 4
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Node2D/enemy/0:scale")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.0000001, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Node2D/enemy/1:rotation")
+tracks/14/interp = 4
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Node2D/enemy/1:scale")
+tracks/15/interp = 2
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Node2D/enemy/2:scale")
+tracks/16/interp = 2
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Node2D/enemy/2:rotation")
+tracks/17/interp = 4
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Node2D/enemy/3:scale")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Node2D/enemy/3:rotation")
+tracks/19/interp = 4
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Node2D/enemy/4:scale")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Node2D/enemy/4:rotation")
+tracks/21/interp = 4
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("ColorRect:position")
+tracks/22/interp = 2
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("ColorRect2:position")
+tracks/23/interp = 2
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 616)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Node2D/enemy/EnemyPortait:rotation")
+tracks/24/interp = 4
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Node2D/enemy/EnemyPortait:scale")
+tracks/25/interp = 2
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 0.99999994)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Node2D/pause:position")
+tracks/26/interp = 2
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-5.1232796, -773.8751)]
+}
+
+[sub_resource type="Animation" id="Animation_wscsl"]
+resource_name = "in"
+length = 0.5000125
+step = 0.083333336
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/player/0:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.02, 1.02), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/player/1:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.04, 1.04), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/player/2:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.06, 1.06), Vector2(0.9999999, 0.99999994)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/player/3:scale")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.08, 1.08), Vector2(0.9999999, 0.99999994)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/player/4:scale")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(0.9999999, 0.99999994)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/player/0:rotation")
+tracks/5/interp = 4
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.03490658503988659, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/player/1:rotation")
+tracks/6/interp = 4
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.03490658503988659, 0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D/player/2:rotation")
+tracks/7/interp = 4
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D/player/3:rotation")
+tracks/8/interp = 4
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.03490658503988659, 0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2D/player/4:rotation")
+tracks/9/interp = 4
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.03490658503988659, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Node2D/player/portrait:scale")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.4, 1.4), Vector2(1.3, 1.3)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Node2D/player/portrait:rotation")
+tracks/11/interp = 4
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.08726646259971647, 0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Node2D/enemy/0:rotation")
+tracks/12/interp = 4
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.03490658503988659, 0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Node2D/enemy/0:scale")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.02, 1.02), Vector2(1.0000001, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Node2D/enemy/1:rotation")
+tracks/14/interp = 4
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Node2D/enemy/1:scale")
+tracks/15/interp = 2
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.04, 1.04), Vector2(1, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Node2D/enemy/2:scale")
+tracks/16/interp = 2
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.06, 1.06), Vector2(1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Node2D/enemy/2:rotation")
+tracks/17/interp = 4
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.03490658503988659, 0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Node2D/enemy/3:scale")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.08, 1.08), Vector2(1, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Node2D/enemy/3:rotation")
+tracks/19/interp = 4
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.03490658503988659, 0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Node2D/enemy/4:scale")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Node2D/enemy/4:rotation")
+tracks/21/interp = 4
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.03490658503988659, 0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("ColorRect:position")
+tracks/22/interp = 2
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -104), Vector2(0, 0), Vector2(0, -10)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("ColorRect2:position")
+tracks/23/interp = 2
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 720), Vector2(0, 616.5), Vector2(0, 626)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Node2D/enemy/EnemyPortait:rotation")
+tracks/24/interp = 4
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.08726646259971647, 0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Node2D/enemy/EnemyPortait:scale")
+tracks/25/interp = 2
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.03, 1.03), Vector2(1, 1)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Node2D/pause:position")
+tracks/26/interp = 2
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.4166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-5.1232796, -1176.1875), Vector2(-5.1232796, -735.43756), Vector2(-5.1232796, -812.31256), Vector2(-5.1232796, -784.12506)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qlqhf"]
+_data = {
+&"RESET": SubResource("Animation_s4a7t"),
+&"in": SubResource("Animation_wscsl")
+}
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1587586187]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1532429745]
+offset_top = 616.0
+offset_right = 1281.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2977976]
+offset_right = 1281.0
+offset_bottom = 104.0
+color = Color(0, 0, 0, 1)
+
+[node name="BGRect" type="ColorRect" parent="." unique_id=20538428]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="scanlines" type="Sprite2D" parent="." unique_id=343898654]
+modulate = Color(0, 0, 0, 0.2509804)
+position = Vector2(640, 360)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("2")
+
+[node name="ShaderRect" type="ColorRect" parent="." unique_id=219328894]
+material = SubResource("ShaderMaterial_62ag5")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node2D" type="Node2D" parent="." unique_id=636467823]
+position = Vector2(639.99994, 360.00003)
+scale = Vector2(0.39036292, 0.39024392)
+
+[node name="player" type="Node2D" parent="Node2D" unique_id=98941259]
+scale = Vector2(0.9999999, 0.99999994)
+
+[node name="0" type="Sprite2D" parent="Node2D/player" unique_id=1675628112]
+position = Vector2(1075.9221, 248.56244)
+scale = Vector2(0.9999999, 0.99999994)
+texture = ExtResource("4")
+
+[node name="1" type="Sprite2D" parent="Node2D/player" unique_id=223001337]
+position = Vector2(586.6338, 448.43744)
+scale = Vector2(0.99999976, 0.9999999)
+texture = ExtResource("5")
+
+[node name="2" type="Sprite2D" parent="Node2D/player" unique_id=1051577704]
+position = Vector2(986.26215, 819.9999)
+scale = Vector2(0.9999999, 0.99999994)
+texture = ExtResource("6")
+
+[node name="3" type="Sprite2D" parent="Node2D/player" unique_id=1844001021]
+position = Vector2(1042.62, 107.62492)
+scale = Vector2(0.9999999, 0.99999994)
+texture = ExtResource("7")
+
+[node name="4" type="Sprite2D" parent="Node2D/player" unique_id=1480137691]
+position = Vector2(1101.5394, -43.56256)
+scale = Vector2(0.9999999, 0.99999994)
+texture = ExtResource("8")
+
+[node name="portrait" type="Sprite2D" parent="Node2D/player" unique_id=1435592140]
+position = Vector2(1137.4034, 238.31244)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("9")
+
+[node name="portrait2" type="Sprite2D" parent="Node2D/player/portrait" unique_id=1591282608]
+modulate = Color(0, 0, 0, 0.5)
+show_behind_parent = true
+position = Vector2(-20, 20)
+texture = ExtResource("9")
+
+[node name="enemy" type="Node2D" parent="Node2D" unique_id=305604268]
+scale = Vector2(0.9999999, 0.99999994)
+
+[node name="0" type="Sprite2D" parent="Node2D/enemy" unique_id=1652159411]
+position = Vector2(-760.83044, 102.49994)
+scale = Vector2(1.0000001, 1)
+texture = ExtResource("10")
+
+[node name="1" type="Sprite2D" parent="Node2D/enemy" unique_id=131637702]
+position = Vector2(-1211.693, 435.62494)
+texture = ExtResource("11")
+
+[node name="2" type="Sprite2D" parent="Node2D/enemy" unique_id=1559583890]
+position = Vector2(-1088.7305, 412.56244)
+texture = ExtResource("12")
+
+[node name="3" type="Sprite2D" parent="Node2D/enemy" unique_id=1699955792]
+position = Vector2(-1129.718, -220.37506)
+texture = ExtResource("13")
+
+[node name="4" type="Sprite2D" parent="Node2D/enemy" unique_id=1655751543]
+position = Vector2(-1055.4281, 7.687439)
+texture = ExtResource("14")
+
+[node name="EnemyPortait" type="Node2D" parent="Node2D/enemy" unique_id=1514859095]
+position = Vector2(-1132, 243.437)
+scale = Vector2(1, 0.99999994)
+
+[node name="Portrait" type="Sprite2D" parent="Node2D/enemy/EnemyPortait" unique_id=837379424]
+position = Vector2(-40, -70)
+rotation = 0.12217305
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("15")
+
+[node name="Portrait2" type="Sprite2D" parent="Node2D/enemy/EnemyPortait/Portrait" unique_id=428544254]
+modulate = Color(0, 0, 0, 0.5)
+show_behind_parent = true
+position = Vector2(20, 20)
+texture = ExtResource("15")
+
+[node name="pause" type="Sprite2D" parent="Node2D" unique_id=365778886]
+z_index = 1
+position = Vector2(-5.1232796, -773.8751)
+scale = Vector2(0.9999995, 0.9999998)
+texture = ExtResource("16")
+
+[node name="Guf1" type="Sprite2D" parent="Node2D" unique_id=1285374920]
+visible = false
+position = Vector2(0.00012207031, -6.1035156e-05)
+scale = Vector2(0.99999964, 0.9999998)
+texture = ExtResource("17")
+
+[node name="resume" type="Sprite2D" parent="Node2D" unique_id=940364028]
+visible = false
+position = Vector2(0.00015640259, -251.12506)
+texture = ExtResource("18")
+
+[node name="Guf3" type="Sprite2D" parent="Node2D" unique_id=293898450]
+visible = false
+texture = ExtResource("19")
+
+[node name="Guf4" type="Sprite2D" parent="Node2D" unique_id=1590312595]
+visible = false
+position = Vector2(0.00015635489, -41.000072)
+texture = ExtResource("20")
+
+[node name="Guf5" type="Sprite2D" parent="Node2D" unique_id=560494372]
+visible = false
+texture = ExtResource("21")
+
+[node name="Guf6" type="Sprite2D" parent="Node2D" unique_id=48304463]
+visible = false
+position = Vector2(2.5618749, 228.06241)
+texture = ExtResource("22")
+
+[node name="Guf7" type="Sprite2D" parent="Node2D" unique_id=612324582]
+visible = false
+texture = ExtResource("23")
+
+[node name="Guf8" type="Sprite2D" parent="Node2D" unique_id=557577648]
+visible = false
+position = Vector2(0.00015640259, 509.93738)
+texture = ExtResource("24")
+
+[node name="Guf9" type="Sprite2D" parent="Node2D" unique_id=1884550945]
+visible = false
+texture = ExtResource("25")
+
+[node name="Guf10" type="Sprite2D" parent="Node2D" unique_id=2033011044]
+visible = false
+position = Vector2(2.5618749, 730.3124)
+texture = ExtResource("26")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=366454988]
+libraries/ = SubResource("AnimationLibrary_qlqhf")
+
+[node name="InfoControl" type="Control" parent="." unique_id=1381017948]
+visible = false
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="ChoiceMenu" type="Control" parent="." unique_id=1137032697 node_paths=PackedStringArray("choice_node")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 508.0
+offset_top = 179.0
+offset_right = 508.0
+offset_bottom = 179.0
+script = ExtResource("27")
+spacing = Vector2(0, 110)
+unselected_color = Color(0.61338997, 0.6133903, 0.61339027, 1)
+choice_node = NodePath("../Label")
+
+[node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1236578175]
+stream = ExtResource("28")
+volume_db = -5.0
+autoplay = true
+bus = &"SFX"
+
+[node name="Label" type="Label" parent="." unique_id=1976606745]
+offset_left = -353.0
+offset_top = 134.0
+offset_right = -86.0
+offset_bottom = 191.0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("29")
+theme_override_font_sizes/font_size = 35
+text = "Hello World"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Filter" type="Sprite2D" parent="." unique_id=1652166231]
+modulate = Color(1, 1, 1, 0.2)
+position = Vector2(640, 360)
+texture = ExtResource("30")

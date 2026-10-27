@@ -1,0 +1,16 @@
+{
+	"Offset": [
+		{"name":"Beat Offset", "key":"beat_offset", "type":"int", 
+		"description":"Changes the offsets of the music"},
+		{"name":"Horizontal Rating Offset", "key":"rating_offset", "type":"intX", 
+		"description":"Changes the horizontal position of the rating."},
+		{"name":"Vertical Rating Offset", "key":"rating_offset", "type":"intY", 
+		"description":"Changes the vertical position of the rating."},
+		{"name":"Horizontal Numbers Offset", "key":"numbers_offset", "type":"intX", 
+		"description":"Changes the horizontal position of the combo numbers."},
+		{"name":"Vertical Numbers Offset", "key":"numbers_offset", "type":"intY", 
+		"description":"Changes the vertical position of the combo numbers."},
+		{"name":"Show Preview", "key":"", "type":"preview", 
+		"description":"Show a preview of the offsets"}
+	]
+}

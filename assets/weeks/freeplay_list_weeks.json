@@ -1,0 +1,16 @@
+{
+	"songs":[
+		
+
+		{"name":"picnic-road", "color":1, "map_value":2},
+		
+		{"name":"red-streamer-battle", "color":1, "map_value":3},
+
+		{"name":"practice", "color":6, "map_value":3},
+
+		{"name":"missile-maestro", "color":1, "map_value":4},
+
+		{"name":"disco-devil", "color":3, "map_value":14},
+
+		],
+}

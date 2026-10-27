@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://cj5ay2n860nik"]
+
+[ext_resource type="Script" uid="uid://kegh2um37hfy" path="res://scenes/states/menus/freeplay_menu/freeplay_menu.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://7gvge3dxac0p" path="res://scenes/game/character/toad-salesman/portrait.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://cmdg8owo17tpj" path="res://scenes/states/menus/freeplay_menu/freeplay_tab.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://qvte1dhevmck" path="res://scenes/states/menus/freeplay_menu/sprites/ExtraBookmark.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cfq38r4jt6vvy" path="res://scenes/states/menus/freeplay_menu/sprites/StoryBookmark.png" id="5"]
+[ext_resource type="FontFile" uid="uid://db8o3ho7eo0xj" path="res://assets/resources/fonts/FOT-PopJoyStd-B.otf" id="6"]
+[ext_resource type="Texture2D" uid="uid://djntusmjxj3rg" path="res://scenes/states/menus/freeplay_menu/sprites/IMG_1249-3.jpg" id="7"]
+[ext_resource type="Texture2D" uid="uid://ca04f3p0ptqkj" path="res://scenes/states/menus/main_menu/sprites/filter.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dmd6vsxd1t3xn" path="res://scenes/game/character/bf/icon-bf-classic.png" id="9"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h04xw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": true,
+"name": &"extra",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}],
+"loop": true,
+"name": &"story",
+"speed": 5.0
+}]
+
+[node name="FreeplayMenu" type="CanvasLayer" unique_id=1828787746 node_paths=PackedStringArray("tab_holder", "storytab", "extratab", "bg_holder", "stage", "portrait_holder", "portrait", "portrait_shadow")]
+script = ExtResource("1")
+tab_holder = NodePath("tabs")
+storytab = NodePath("tabs/storytab")
+extratab = NodePath("tabs/extratab")
+bg_holder = NodePath("bg_holder")
+stage = NodePath("bg_holder/stage_bg")
+portrait_holder = NodePath("portrait/portrait_holder")
+portrait = NodePath("portrait/portrait_holder/portrait")
+portrait_shadow = NodePath("portrait/portrait_holder/portrait/portrait-shadow")
+metadata/_edit_horizontal_guides_ = [-9.0]
+
+[node name="bg_holder" type="Node2D" parent="." unique_id=1004545775]
+position = Vector2(640, 360)
+
+[node name="ColorRect" type="ColorRect" parent="bg_holder" unique_id=1203922287]
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.5, 0.5, 0.5, 0.3019608)
+
+[node name="stage_bg" type="Sprite2D" parent="bg_holder" unique_id=1680610580]
+z_index = -1
+scale = Vector2(0.5, 0.5)
+
+[node name="portrait" type="Node" parent="." unique_id=1911857544]
+
+[node name="portrait_holder" type="Node2D" parent="portrait" unique_id=779142877]
+position = Vector2(1144, 360)
+
+[node name="portrait" type="Sprite2D" parent="portrait/portrait_holder" unique_id=1540591017]
+position = Vector2(-26, 52)
+rotation = -0.07679449
+scale = Vector2(0.49, 0.49)
+texture = ExtResource("2")
+
+[node name="portrait-shadow" type="Sprite2D" parent="portrait/portrait_holder/portrait" unique_id=973844090]
+modulate = Color(0, 0, 0, 0.37600002)
+show_behind_parent = true
+position = Vector2(20, 20)
+texture = ExtResource("2")
+
+[node name="tabs" type="Node2D" parent="." unique_id=1755720126]
+position = Vector2(509, 360)
+
+[node name="extratab" parent="tabs" unique_id=398306733 instance=ExtResource("3")]
+z_index = 1
+position = Vector2(30, 0)
+id = "extra"
+
+[node name="storytab" parent="tabs" unique_id=126921714 instance=ExtResource("3")]
+z_index = 1
+id = "story"
+
+[node name="bookmark2" type="AnimatedSprite2D" parent="tabs" unique_id=1420889156]
+visible = false
+show_behind_parent = true
+z_index = 3
+position = Vector2(350, -280)
+scale = Vector2(0.551302, 0.551302)
+sprite_frames = SubResource("SpriteFrames_h04xw")
+animation = &"story"
+
+[node name="title" type="Label" parent="tabs/bookmark2" unique_id=1090281664]
+offset_left = -203.0
+offset_top = -11.0
+offset_right = 198.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 32
+text = "Press [TAB]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=629944552]
+layer = 2
+
+[node name="Img12493" type="Sprite2D" parent="CanvasLayer" unique_id=1320073723]
+visible = false
+self_modulate = Color(1, 1, 1, 0.282)
+position = Vector2(640, 360)
+scale = Vector2(0.6666666, 0.6666667)
+texture = ExtResource("7")
+
+[node name="Filter" type="Sprite2D" parent="CanvasLayer" unique_id=1630788406]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(640, 360)
+texture = ExtResource("8")
+metadata/_edit_lock_ = true
+
+[node name="skinicon" type="Sprite2D" parent="CanvasLayer" unique_id=943711181]
+visible = false
+position = Vector2(1160.0001, 620.00006)
+scale = Vector2(0.39999995, 0.39999995)
+texture = ExtResource("9")
+hframes = 3
+
+[node name="shadow" type="Sprite2D" parent="CanvasLayer/skinicon" unique_id=1696680984]
+modulate = Color(0, 0, 0, 0.5)
+show_behind_parent = true
+position = Vector2(-22.673096, 18.13977)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("9")
+hframes = 3

@@ -1,0 +1,51 @@
+{
+		"Controls": [
+			{"name":"Open Keybind Settings...", "key":"KEYBINDS","type":"menu", 
+			"description":"Change your Keybinds!"}
+		],
+
+		"Offset": [
+			{"name":"Open Offset Settings...", "key":"OFFSET","type":"menu", 
+			"description":"Opens Settings for HUD and song offsets."}
+		],
+
+		"Graphics": [
+			{"name":"Framerate", "key":"framerate","type":"select",
+			"description":"Changes the max framerate of the game!"},
+		],
+
+		"Visuals & UI": [
+			{"name":"Hide HUD", "key":"hide_hud","type":"bool", 
+			"description":"Hides the game HUD. Use this if you only want to focus on the notes!"},
+
+			{"name":"Time Bar", "key":"time_bar","type":"select", 
+			"description":"Change what the time bar displays! If at all."},
+
+			{"name":"Debug Mode", "key":"debug_mode","type":"bool", 
+			"description":"Enables debug mode, which displays your FPS and memory usage in the top left of your screen, and allows you to use a host of debug keys while in song!"},
+
+			{"name":"Open Camera Settings...", "key":"CAMERA","type":"menu", 
+			"description":"Change settings about the camera!"},
+		],
+
+		"Gameplay": [
+			{"name":"Downscroll", "key":"downscroll","type":"bool", 
+			"description":"Notes will fall from the top, requiring you to hit them at the bottom."},
+
+			{"name":"Middlescroll", "key":"midscroll","type":"bool", 
+			"description":"Moves the player notes to the middle."},
+
+			{"name":"Hide Opponent Notes", "key":"opponent_notes","type":"bool", 
+			"description":"Hides the opponents notes."},
+
+			{"name":"Ghost Tapping", "key":"ghost_tapping","type":"bool", 
+			"description":"No penalty for tapping an arrow that doesn't have a note!"},
+
+		],
+
+
+		"Save Data": [
+			{"name":"Delete your save data...", "key":"DELETE","type":"menu", 
+			"description":"Delete your existing save data for Friday Night Funkin': The Origami King."}
+		]
+}

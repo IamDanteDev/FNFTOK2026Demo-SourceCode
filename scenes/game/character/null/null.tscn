@@ -1,0 +1,190 @@
+[gd_scene format=3 uid="uid://cd0ipggd8bjn5"]
+
+[ext_resource type="Script" uid="uid://ch1qwb4e6b73t" path="res://scenes/game/character/character.gd" id="1"]
+
+[sub_resource type="Animation" id="Animation_cc5v1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_38uhv"]
+resource_name = "danceLeft"
+length = 0.416671
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667, 0.333333, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_aflcl"]
+resource_name = "danceRight"
+length = 0.416671
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667, 0.333333, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+}
+
+[sub_resource type="Animation" id="Animation_hbhp0"]
+resource_name = "idle"
+length = 0.416671
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833334, 0.125, 0.166667, 0.208334, 0.25, 0.291667, 0.333334, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_q7mga"]
+resource_name = "scared"
+length = 0.166671
+loop_mode = 1
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [56, 57, 58, 59]
+}
+
+[sub_resource type="Animation" id="Animation_8tj7y"]
+resource_name = "sing_down"
+length = 0.208338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833334, 0.125, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [38, 39, 40, 41, 42]
+}
+
+[sub_resource type="Animation" id="Animation_v1umi"]
+resource_name = "sing_left"
+length = 0.333338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833334, 0.125, 0.166667, 0.208334, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [30, 31, 32, 33, 34, 35, 36, 37]
+}
+
+[sub_resource type="Animation" id="Animation_w0k2g"]
+resource_name = "sing_right"
+length = 0.333338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833334, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [48, 49, 50, 51, 52, 53, 54, 55]
+}
+
+[sub_resource type="Animation" id="Animation_x0giv"]
+resource_name = "sing_up"
+length = 0.208338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833334, 0.125, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [43, 44, 45, 46, 47]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5i8ka"]
+_data = {
+&"RESET": SubResource("Animation_cc5v1"),
+&"danceLeft": SubResource("Animation_38uhv"),
+&"danceRight": SubResource("Animation_aflcl"),
+&"idle": SubResource("Animation_hbhp0"),
+&"scared": SubResource("Animation_q7mga"),
+&"sing_down": SubResource("Animation_8tj7y"),
+&"sing_left": SubResource("Animation_v1umi"),
+&"sing_right": SubResource("Animation_w0k2g"),
+&"sing_up": SubResource("Animation_x0giv")
+}
+
+[node name="Character" type="Node2D"]
+use_parent_material = true
+script = ExtResource("1")
+path_animation_player = NodePath("Sprite2D/AnimationPlayer")
+path_camera_pos = NodePath("Camera_Pos")
+
+[node name="Camera_Pos" type="Marker2D" parent="."]
+position = Vector2(0, -346)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+use_parent_material = true
+position = Vector2(0, -331)
+hframes = 8
+vframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_5i8ka")
+}
+autoplay = "idle"

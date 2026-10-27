@@ -1,0 +1,8 @@
+{
+		"Camera": [
+			{"name":"Camera Style", "key":"camera_style","type":"select", 
+			"description":"Changes the camera style."},
+			{"name":"Dynamic Camera", "key":"camera_dynamic","type":"bool", 
+			"description":"If enabled the camera will move with the characters' singing direction."},
+		]
+}

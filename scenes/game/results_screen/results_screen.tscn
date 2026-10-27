@@ -1,0 +1,410 @@
+[gd_scene format=3 uid="uid://n6yi7tvd0vii"]
+
+[ext_resource type="Script" uid="uid://6xx8rges51u4" path="res://scenes/game/results_screen/results_screen.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dfyoj4wm0hy0u" path="res://scenes/game/results_screen/reference.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c1fe8v5m0perw" path="res://scenes/game/results_screen/fade.png" id="3"]
+[ext_resource type="Theme" uid="uid://cfsgglmh7kv8p" path="res://assets/resources/themes/Paper_Major.tres" id="4"]
+[ext_resource type="Theme" uid="uid://cb2wwsbyfbbky" path="res://assets/resources/themes/Paper_Minor.tres" id="5"]
+[ext_resource type="Texture2D" uid="uid://cj71h4gd7isl5" path="res://scenes/game/results_screen/coinwhite.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cu6rfm27b6qpt" path="res://scenes/game/results_screen/cointotal.png" id="7"]
+[ext_resource type="AudioStream" uid="uid://cj2a7gnal220q" path="res://scenes/game/results_screen/counter.ogg" id="8"]
+[ext_resource type="AudioStream" uid="uid://67halqyo7mhh" path="res://assets/sounds/coin_collect.ogg" id="9"]
+[ext_resource type="AudioStream" uid="uid://b8prsa3hn13mk" path="res://scenes/game/results_screen/initial.ogg" id="10"]
+[ext_resource type="Texture2D" uid="uid://c3725odcyn6xa" path="res://scenes/states/menus/story_menu/sprites/ranks/rank-p.png" id="11"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0fyiu"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"spinning",
+"speed": 5.0
+}]
+
+[node name="ResultsScreen" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="Refrence" type="TextureRect" parent="."]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2")
+
+[node name="BackgroundRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0.6)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -252.0
+offset_top = 53.0
+offset_right = 253.0
+offset_bottom = 362.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+color = Color(0, 0, 0, 1)
+
+[node name="right_fade" type="Sprite2D" parent="BackgroundRect"]
+position = Vector2(595, 154.475)
+scale = Vector2(0.6, 0.937)
+texture = ExtResource("3")
+
+[node name="right_fade2" type="Sprite2D" parent="BackgroundRect"]
+position = Vector2(-90, 154.475)
+scale = Vector2(0.6, 0.936515)
+texture = ExtResource("3")
+flip_h = true
+
+[node name="SongBonus" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -193.0
+offset_top = 23.0
+offset_right = 193.0
+offset_bottom = 83.0
+grow_horizontal = 2
+pivot_offset = Vector2(193, 30)
+theme = ExtResource("4")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.282353, 0.294118, 0.286275, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 13
+theme_override_constants/shadow_outline_size = 5
+theme_override_font_sizes/font_size = 57
+text = "Song Cleared!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bonuses" type="VBoxContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.0
+offset_top = 102.0
+offset_right = 238.0
+offset_bottom = 332.0
+grow_horizontal = 2
+theme_override_constants/separation = 5
+
+[node name="AccuracyBonus" type="Label" parent="Bonuses"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme = ExtResource("5")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Accuracy Bonus"
+
+[node name="Coin" type="Sprite2D" parent="Bonuses/AccuracyBonus"]
+position = Vector2(344.591, 10.039)
+scale = Vector2(1.15909, 1.15909)
+texture = ExtResource("6")
+
+[node name="X" type="Label" parent="Bonuses/AccuracyBonus"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = -2.0
+offset_right = 379.0
+offset_bottom = 31.0
+rotation = 0.20944
+theme = ExtResource("4")
+theme_override_font_sizes/font_size = 26
+text = "x"
+
+[node name="Total" type="Label" parent="Bonuses/AccuracyBonus"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = -19.0
+offset_right = 475.0
+offset_bottom = 29.0
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 45
+text = "194"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ClearDivider" type="ColorRect" parent="Bonuses/AccuracyBonus"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 0
+offset_top = 24.0
+offset_right = 475.0
+offset_bottom = 26.0
+grow_horizontal = 2
+color = Color(1, 1, 1, 0.3)
+
+[node name="SickBonus" type="Label" parent="Bonuses"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme = ExtResource("5")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Sick Bonus
+"
+
+[node name="Coin" type="Sprite2D" parent="Bonuses/SickBonus"]
+position = Vector2(344.591, 10.039)
+scale = Vector2(1.15909, 1.15909)
+texture = ExtResource("6")
+
+[node name="X" type="Label" parent="Bonuses/SickBonus"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = -2.0
+offset_right = 379.0
+offset_bottom = 31.0
+rotation = 0.20944
+theme = ExtResource("4")
+theme_override_font_sizes/font_size = 26
+text = "x"
+
+[node name="Total" type="Label" parent="Bonuses/SickBonus"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = -19.0
+offset_right = 475.0
+offset_bottom = 29.0
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 45
+text = "97"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ClearDivider" type="ColorRect" parent="Bonuses/SickBonus"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 0
+offset_top = 24.0
+offset_right = 475.0
+offset_bottom = 26.0
+grow_horizontal = 2
+color = Color(1, 1, 1, 0.3)
+
+[node name="No-DamageBonus" type="Label" parent="Bonuses"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme = ExtResource("5")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "No-Damage Bonus"
+
+[node name="Coin" type="Sprite2D" parent="Bonuses/No-DamageBonus"]
+position = Vector2(344.591, 10.039)
+scale = Vector2(1.15909, 1.15909)
+texture = ExtResource("6")
+
+[node name="X" type="Label" parent="Bonuses/No-DamageBonus"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = -2.0
+offset_right = 379.0
+offset_bottom = 31.0
+rotation = 0.20944
+theme = ExtResource("4")
+theme_override_font_sizes/font_size = 26
+text = "x"
+
+[node name="Total" type="Label" parent="Bonuses/No-DamageBonus"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = -19.0
+offset_right = 475.0
+offset_bottom = 29.0
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 45
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ClearDivider" type="ColorRect" parent="Bonuses/No-DamageBonus"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 0
+offset_top = 24.0
+offset_right = 475.0
+offset_bottom = 26.0
+grow_horizontal = 2
+color = Color(1, 1, 1, 0.3)
+
+[node name="MissPenalty" type="Label" parent="Bonuses"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme = ExtResource("5")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Miss Penalty"
+
+[node name="Coin" type="Sprite2D" parent="Bonuses/MissPenalty"]
+position = Vector2(344.591, 10.039)
+scale = Vector2(1.15909, 1.15909)
+texture = ExtResource("6")
+
+[node name="X" type="Label" parent="Bonuses/MissPenalty"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = -2.0
+offset_right = 379.0
+offset_bottom = 31.0
+rotation = 0.20944
+theme = ExtResource("4")
+theme_override_font_sizes/font_size = 26
+text = "x"
+
+[node name="Total" type="Label" parent="Bonuses/MissPenalty"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = -19.0
+offset_right = 475.0
+offset_bottom = 29.0
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(1, 0.388819, 0.522112, 1)
+theme_override_font_sizes/font_size = 45
+text = "-7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ClearDivider" type="ColorRect" parent="Bonuses/MissPenalty"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 0
+offset_top = 24.0
+offset_right = 475.0
+offset_bottom = 26.0
+grow_horizontal = 2
+color = Color(1, 1, 1, 0.3)
+
+[node name="Total" type="Label" parent="Bonuses"]
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("5")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 25
+text = "Total"
+vertical_alignment = 1
+
+[node name="Coin" type="Sprite2D" parent="Bonuses/Total"]
+position = Vector2(292.5, 1.04999)
+scale = Vector2(1.31818, 1.31818)
+texture = ExtResource("7")
+
+[node name="X" type="Label" parent="Bonuses/Total"]
+layout_mode = 0
+offset_left = 318.0
+offset_top = -15.0
+offset_right = 347.0
+offset_bottom = 28.0
+rotation = 0.20944
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(0.266667, 0.254902, 0.235294, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "x"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="Bonuses/Total"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -38.0
+offset_right = 481.0
+offset_bottom = 41.0
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(0.266667, 0.254902, 0.235294, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 70
+text = "485"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TotalDivider" type="ColorRect" parent="Bonuses/Total"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 0
+offset_top = 30.0
+offset_right = 475.0
+offset_bottom = 32.0
+grow_horizontal = 2
+color = Color(1, 1, 1, 0.3)
+
+[node name="CoinCounter" type="Node2D" parent="."]
+
+[node name="Coin" type="Sprite2D" parent="CoinCounter"]
+position = Vector2(56, 677)
+scale = Vector2(1.31818, 1.31818)
+texture = ExtResource("7")
+
+[node name="X" type="Label" parent="CoinCounter"]
+offset_left = 80.0
+offset_top = 660.0
+offset_right = 109.0
+offset_bottom = 703.0
+rotation = 0.20944
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(0.266667, 0.254902, 0.235294, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "x"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="CoinCounter"]
+offset_left = 98.0
+offset_top = 638.0
+offset_right = 247.0
+offset_bottom = 717.0
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(0.266667, 0.254902, 0.235294, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 70
+text = "2858"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AnimatedCoin" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_0fyiu")
+animation = &"spinning"
+
+[node name="CounterPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8")
+volume_db = 20.0
+max_polyphony = 999
+
+[node name="CoinCollect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9")
+
+[node name="HitPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10")
+volume_db = 5.0
+max_polyphony = 999
+
+[node name="rank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(968, 274)
+rotation = 0.0872665
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11")

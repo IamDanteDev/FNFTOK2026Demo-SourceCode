@@ -1,0 +1,27 @@
+{
+	"toad-salesman":
+		{"pos": [25,50],
+		"rot": -10,
+		"size": 0.6},
+
+	"rsb-trio":
+		{"pos": [15,20],
+		"rot": 4,
+		"size": 0.5},
+
+	"colored-pencils":
+		{"pos": [14,30],
+		"rot": -11,
+		"size": 0.5},
+
+	"hole-punch":
+		{"pos": [-70,10],
+		"rot": 0,
+		"size": 0.5},
+
+	"null":
+		{"pos": [0,0],
+		"rot": 0,
+		"size": 0.5},
+
+}

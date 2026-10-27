@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://clxs7e86lk7cc"]
+
+[ext_resource type="Script" uid="uid://dodbsvvl1p5yn" path="res://scenes/states/menus/options_menu/options_menu.gd" id="1"]
+[ext_resource type="Theme" uid="uid://cfsgglmh7kv8p" path="res://assets/resources/themes/Paper_Major.tres" id="2"]
+[ext_resource type="Shader" uid="uid://kxtocjhgrn7x" path="res://assets/resources/shaders/noise.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://tq4kix8f4kkj" path="res://coffeeshop1.png" id="4"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_plilh"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_av57a"]
+noise = SubResource("FastNoiseLite_plilh")
+seamless = true
+seamless_blend_skirt = 0.455
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_luohj"]
+shader = ExtResource("3")
+shader_parameter/NOISE_TEXTURE = SubResource("NoiseTexture2D_av57a")
+shader_parameter/strength = 5.0
+shader_parameter/uv_scaling = 1.0
+shader_parameter/movement_direction = Vector2(1, 0)
+shader_parameter/movement_speed = 0.1
+
+[node name="OptionsMenu" type="Node2D" unique_id=1882751834]
+script = ExtResource("1")
+
+[node name="labelHolder" type="Control" parent="." unique_id=286905056]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=193751779]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1631594029]
+layer = -5
+
+[node name="Coffeeshop1" type="Sprite2D" parent="CanvasLayer" unique_id=182448288]
+material = SubResource("ShaderMaterial_luohj")
+position = Vector2(639, 358)
+scale = Vector2(0.667708, 0.666667)
+texture = ExtResource("4")

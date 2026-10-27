@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://blcccqj0bgfym"]
+
+[ext_resource type="Theme" uid="uid://cb2wwsbyfbbky" path="res://assets/resources/themes/Paper_Minor.tres" id="1"]
+
+[node name="InputNode" type="Control"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 39.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 60
+
+[node name="InputName" type="Label" parent="MarginContainer"]
+modulate = Color(0.0588235, 0.988235, 0.0470588, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+theme = ExtResource("1")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 38
+text = "Input Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Input" type="Label" parent="MarginContainer"]
+modulate = Color(0.0588235, 0.988235, 0.0470588, 1)
+layout_mode = 2
+theme = ExtResource("1")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 38
+text = "Input"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Input2" type="Label" parent="MarginContainer"]
+modulate = Color(0.0588235, 0.988235, 0.0470588, 1)
+layout_mode = 2
+theme = ExtResource("1")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 38
+text = "Input2"
+horizontal_alignment = 2
+vertical_alignment = 1

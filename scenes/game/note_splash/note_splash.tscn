@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://b4emaelr1bivm"]
+
+[ext_resource type="Script" uid="uid://v0cwn2vmjmlu" path="res://scenes/game/note_splash/note_splash.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://k554xy46uc7p" path="res://scenes/game/note_splash/tok-note_splashes.png" id="2"]
+
+[sub_resource type="Animation" id="Animation_q31wc"]
+resource_name = "0"
+length = 0.250004
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_457hq"]
+resource_name = "1"
+length = 0.166671
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_5fl00"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lsnuq"]
+_data = {
+&"0": SubResource("Animation_q31wc"),
+&"1": SubResource("Animation_457hq"),
+&"RESET": SubResource("Animation_5fl00")
+}
+
+[node name="NoteSplash" type="Node2D"]
+modulate = Color(1, 1, 1, 0.745098)
+script = ExtResource("1")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(10, -6)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2")
+hframes = 6
+vframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lsnuq")
+}
+autoplay = "0"

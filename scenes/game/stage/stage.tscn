@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cgiof71uaejwf"]
+
+[ext_resource type="Script" uid="uid://co5f1eevakw0t" path="res://scenes/game/stage/stage.gd" id="1"]
+
+[node name="Stage" type="Node2D" unique_id=435743248]
+script = ExtResource("1")
+stage_center = NodePath("Positions/StageCenter")
+
+[node name="Characters" type="Node2D" parent="." unique_id=1091469851]
+
+[node name="Positions" type="Node" parent="." unique_id=515678785]
+
+[node name="PlayerPosition" type="Marker2D" parent="Positions" unique_id=504599492]
+position = Vector2(250, 198)
+
+[node name="EnemyPosition" type="Marker2D" parent="Positions" unique_id=1763238209]
+position = Vector2(-250, 198)
+
+[node name="GFPosition" type="Marker2D" parent="Positions" unique_id=1029499324]
+position = Vector2(0, 118)
+
+[node name="RatingPosition" type="Marker2D" parent="Positions" unique_id=1915039210]
+
+[node name="StageCenter" type="Marker2D" parent="Positions" unique_id=1713045743]
+position = Vector2(0, 157)

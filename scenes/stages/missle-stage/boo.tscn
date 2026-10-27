@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://1kiwiy6roqts"]
+
+[ext_resource type="Texture2D" uid="uid://crgcvgag6d7kb" path="res://scenes/stages/missle-stage/boos.png" id="1"]
+[ext_resource type="Script" uid="uid://bqckef5huq8rg" path="res://scenes/stages/missle-stage/boo.gd" id="2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ungrf"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 257, 268)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wr8s0"]
+atlas = ExtResource("1")
+region = Rect2(257, 0, 257, 268)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_315vl"]
+atlas = ExtResource("1")
+region = Rect2(514, 0, 257, 268)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xk73h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ungrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wr8s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_315vl")
+}],
+"loop": true,
+"name": &"float",
+"speed": 12.0
+}]
+
+[node name="Boo" type="AnimatedSprite2D" unique_id=2000335744]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_xk73h")
+animation = &"float"
+frame_progress = 0.909089
+script = ExtResource("2")

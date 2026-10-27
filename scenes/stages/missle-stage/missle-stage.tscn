@@ -1,0 +1,379 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://co5f1eevakw0t" path="res://scenes/game/stage/stage.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://7yddtpr4q3cl" path="res://scenes/game/character/bf/bf.tscn" id="2"]
+[ext_resource type="Script" uid="uid://b7y38vqukvhrf" path="res://scenes/stages/missle-stage/missle-sprites.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://cyh5873k642xu" path="res://scenes/stages/missle-stage/sprites/Background_new-1.png" id="4"]
+[ext_resource type="Script" uid="uid://hoxvg8iqm7du" path="res://assets/resources/shaders/psudo_3D.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://ujai1xkw1j7v" path="res://scenes/stages/missle-stage/sprites/Background_new-2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dxeskue81qb68" path="res://scenes/stages/missle-stage/sprites/Background_new-3.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://s1euyxbyxe3t" path="res://scenes/stages/missle-stage/sprites/Background_new-4.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://xwkcjk8r34yh" path="res://scenes/stages/missle-stage/sprites/Background_new-5.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c037eb6ikjad1" path="res://scenes/stages/missle-stage/sprites/balloon1.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dy4jmdjafbdo4" path="res://scenes/stages/missle-stage/sprites/balloon3.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://oy11auwmrfs1" path="res://scenes/stages/missle-stage/sprites/balloon4.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://42amliiybxhk" path="res://scenes/stages/missle-stage/sprites/balloon5.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dkjioxs2nqymt" path="res://scenes/stages/missle-stage/sprites/balloon6.png" id="14"]
+[ext_resource type="Shader" uid="uid://uaopx2cprdwt" path="res://assets/resources/shaders/psudo_3D_Vertex_Shader.gdshader" id="15"]
+[ext_resource type="Texture2D" uid="uid://bqi1r4iqkxoom" path="res://scenes/stages/missle-stage/cable21.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://belvxqmsdtm2s" path="res://scenes/stages/missle-stage/cable22.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bbw02r46y1sm" path="res://scenes/stages/missle-stage/sprites/Background_new-6.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://ckarp2rd56hlp" path="res://scenes/stages/missle-stage/sprites/Background_new-7.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cv3b2xt7ekd1t" path="res://scenes/stages/missle-stage/sprites/missile/image-1.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://c08cw2emnwe40" path="res://scenes/stages/missle-stage/sprites/missile/image-2.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dhl4qcqmbs5g1" path="res://scenes/stages/missle-stage/sprites/missile/image-3.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://ch13ukonteias" path="res://scenes/stages/missle-stage/sprites/missile/image-4.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://bem62glexomf4" path="res://scenes/stages/missle-stage/sprites/missile/image-5.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://bhxu5hm2bfodm" path="res://scenes/stages/missle-stage/sprites/missile/image-6.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://66v3nyoiqa3n" path="res://scenes/stages/missle-stage/sprites/missile/image-7.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://ebd1wmdsmh0b" path="res://scenes/stages/missle-stage/sprites/missile/image-8.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://dxp07q6mvuxg5" path="res://scenes/stages/missle-stage/sprites/image-8.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://bm5iyonv8g462" path="res://scenes/stages/missle-stage/sprites/image-9.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://0vv2onnvebi8" path="res://scenes/stages/missle-stage/sprites/image-10.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://dgxo0dtphqgb8" path="res://scenes/stages/missle-stage/sprites/image-11.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://cgisknqlvauum" path="res://scenes/stages/missle-stage/sprites/image-12.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://bktf7sge555g4" path="res://scenes/stages/missle-stage/sprites/image-13.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://s14hbxk0yho4" path="res://scenes/stages/missle-stage/cable11.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://56eh6rlrdedb" path="res://scenes/stages/missle-stage/cable12.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://3q06bswdji2i" path="res://scenes/stages/missle-stage/sprites/Background_new-8.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://dknxte4qvms5k" path="res://scenes/stages/missle-stage/sprites/missile/pencils.png" id="37"]
+[ext_resource type="AudioStream" uid="uid://dbplaucxohwbc" path="res://assets/sounds/boo_spawn.ogg" id="38"]
+[ext_resource type="Texture2D" uid="uid://bcqi6pigmyi0w" path="res://scenes/stages/missle-stage/sprites/missile/Missile_Pencil-1.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://baheyknclaqky" path="res://scenes/states/menus/main_menu/sprites/filterw.png" id="40"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x5dlh"]
+shader = ExtResource("15")
+shader_parameter/amty = 0.0
+shader_parameter/amtx = 0.0
+shader_parameter/sideb = 0.0
+shader_parameter/sidea = 0.0
+shader_parameter/toprightw = 0.0
+shader_parameter/horizontal = false
+shader_parameter/experemental = false
+shader_parameter/vertex1 = 0.0
+shader_parameter/vertex2 = 0.0
+shader_parameter/vertex3 = 0.0
+shader_parameter/vertex4 = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pbjcv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x312l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1y6ex"]
+shader = ExtResource("15")
+shader_parameter/amty = 0.0
+shader_parameter/amtx = 0.0
+shader_parameter/sideb = 0.0
+shader_parameter/sidea = 0.0
+shader_parameter/toprightw = 0.0
+shader_parameter/horizontal = false
+shader_parameter/experemental = false
+shader_parameter/vertex1 = 0.0
+shader_parameter/vertex2 = 0.0
+shader_parameter/vertex3 = 0.0
+shader_parameter/vertex4 = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mxh1y"]
+shader = ExtResource("15")
+shader_parameter/amty = 0.0
+shader_parameter/amtx = 0.0
+shader_parameter/sideb = 0.0
+shader_parameter/sidea = 0.0
+shader_parameter/toprightw = 0.0
+shader_parameter/horizontal = false
+shader_parameter/experemental = false
+shader_parameter/vertex1 = 0.0
+shader_parameter/vertex2 = 0.0
+shader_parameter/vertex3 = 0.0
+shader_parameter/vertex4 = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yerqt"]
+atlas = ExtResource("37")
+region = Rect2(0, 0, 727, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1l7wj"]
+atlas = ExtResource("37")
+region = Rect2(727, 0, 727, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02s7p"]
+atlas = ExtResource("37")
+region = Rect2(1454, 0, 727, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5qle"]
+atlas = ExtResource("37")
+region = Rect2(2181, 0, 727, 280)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vrp5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yerqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1l7wj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02s7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5qle")
+}],
+"loop": true,
+"name": &"float",
+"speed": 12.0
+}]
+
+[node name="Stage" type="Node2D" unique_id=1486053670 node_paths=PackedStringArray("player_cam_override")]
+script = ExtResource("1")
+camera_zoom = Vector2(0.5, 0.5)
+player_position = Vector2(770, 100)
+player_cam_override = NodePath("Positions/PlayerCamOverride")
+enemy_position = Vector2(100, 100)
+gf_position = Vector2(400, 130)
+gf_size = 0.9
+stage_center = NodePath("Positions/StageCenter")
+
+[node name="Positions" type="Node" parent="." unique_id=2140033564]
+
+[node name="GFPosition" type="Marker2D" parent="Positions" unique_id=1670278633]
+position = Vector2(400, 500)
+
+[node name="PlayerPosition" type="Marker2D" parent="Positions" unique_id=994024293]
+position = Vector2(736, 717.8)
+
+[node name="Character" parent="Positions/PlayerPosition" unique_id=1554812653 instance=ExtResource("2")]
+
+[node name="EnemyPosition" type="Marker2D" parent="Positions" unique_id=1098096024]
+position = Vector2(-411, 583.8)
+
+[node name="RatingPosition" type="Marker2D" parent="Positions" unique_id=1637028747]
+position = Vector2(568, 336.8)
+
+[node name="StageCenter" type="Marker2D" parent="Positions" unique_id=1683072629]
+
+[node name="PlayerCamOverride" type="Marker2D" parent="Positions" unique_id=33749443]
+position = Vector2(465, 255)
+
+[node name="sprites" type="Node2D" parent="." unique_id=468045702]
+position = Vector2(246, -110)
+script = ExtResource("3")
+
+[node name="sky" type="Sprite2D" parent="sprites" unique_id=2012619431]
+z_index = -1
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("4")
+script = ExtResource("5")
+ObjectWeight = -0.6
+
+[node name="clouds" type="Sprite2D" parent="sprites" unique_id=549304849]
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("6")
+script = ExtResource("5")
+ObjectWeight = -0.55
+
+[node name="autumn_mountain" type="Sprite2D" parent="sprites" unique_id=1540332493]
+position = Vector2(-12, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("7")
+script = ExtResource("5")
+ObjectWeight = -0.5
+
+[node name="pole_far" type="Sprite2D" parent="sprites" unique_id=330605885]
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("8")
+script = ExtResource("5")
+ObjectWeight = -0.45
+
+[node name="mountains" type="Sprite2D" parent="sprites" unique_id=1526221870]
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("9")
+script = ExtResource("5")
+ObjectWeight = -0.42
+
+[node name="Balloon1" type="Sprite2D" parent="sprites" unique_id=313072872]
+position = Vector2(1571, -655.7)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("10")
+
+[node name="Balloon2" type="Sprite2D" parent="sprites" unique_id=518351620]
+position = Vector2(2103, -776.7)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("11")
+
+[node name="Balloon3" type="Sprite2D" parent="sprites" unique_id=854934591]
+position = Vector2(1775, -384.7)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("12")
+
+[node name="Balloon4" type="Sprite2D" parent="sprites" unique_id=448170953]
+position = Vector2(2808, -695.7)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("13")
+
+[node name="Balloon5" type="Sprite2D" parent="sprites" unique_id=1132118273]
+position = Vector2(2392, -519.7)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("14")
+
+[node name="cableback" type="Sprite2D" parent="sprites" unique_id=746437327]
+material = SubResource("ShaderMaterial_x5dlh")
+position = Vector2(-168, -13)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("16")
+script = ExtResource("5")
+isStaticObject = false
+VertexTopLeftWeight = -0.5
+VertexTopRightWeight = -0.02
+VertexBottomLeftWeight = -0.5
+VertexBottomRightWeight = -0.02
+
+[node name="cableback2" type="Sprite2D" parent="sprites/cableback" unique_id=1349676067]
+z_index = -1
+material = SubResource("ShaderMaterial_x5dlh")
+texture = ExtResource("17")
+script = ExtResource("5")
+isStaticObject = false
+VertexTopLeftWeight = -0.5
+VertexTopRightWeight = -0.02
+VertexBottomLeftWeight = -0.5
+VertexBottomRightWeight = -0.02
+
+[node name="pole_close" type="Sprite2D" parent="sprites" unique_id=804469321]
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("18")
+script = ExtResource("5")
+ObjectWeight = -0.3
+
+[node name="ground" type="Sprite2D" parent="sprites" unique_id=982905871]
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("19")
+
+[node name="Reticle" type="AnimatedSprite2D" parent="sprites" unique_id=1910190900]
+visible = false
+position = Vector2(507, 828)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_pbjcv")
+autoplay = "default"
+frame_progress = 0.91879654
+
+[node name="explosion" type="AnimatedSprite2D" parent="sprites" unique_id=223099462]
+z_index = 1
+position = Vector2(490, 590)
+sprite_frames = SubResource("SpriteFrames_x312l")
+frame = 5
+frame_progress = 1.0
+
+[node name="cablefront" type="Sprite2D" parent="sprites" unique_id=101920069]
+material = SubResource("ShaderMaterial_1y6ex")
+position = Vector2(-192, -33)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("34")
+script = ExtResource("5")
+isStaticObject = false
+VertexTopLeftWeight = -0.48
+VertexBottomLeftWeight = -0.48
+
+[node name="cablefront2" type="Sprite2D" parent="sprites/cablefront" unique_id=962848256]
+z_index = -1
+material = SubResource("ShaderMaterial_mxh1y")
+texture = ExtResource("35")
+script = ExtResource("5")
+isStaticObject = false
+VertexTopLeftWeight = -0.48
+VertexBottomLeftWeight = -0.48
+
+[node name="station" type="Sprite2D" parent="sprites" unique_id=501477672]
+position = Vector2(-20, 0)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("36")
+
+[node name="pencils" type="Node2D" parent="sprites" unique_id=312434182]
+position = Vector2(-1116, -1221)
+
+[node name="sprites" type="AnimatedSprite2D" parent="sprites/pencils" unique_id=1824588351]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_vrp5l")
+animation = &"float"
+autoplay = "float"
+frame_progress = 0.237868
+offset = Vector2(-296.62, 2.11011)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="sprites" unique_id=405917858]
+stream = ExtResource("38")
+
+[node name="Broken_Pencil" type="Sprite2D" parent="sprites" unique_id=74232723]
+visible = false
+position = Vector2(506.00006, 630)
+rotation = 4.727704
+texture = ExtResource("39")
+flip_h = true
+
+[node name="Characters" type="Node2D" parent="." unique_id=1236562682]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=470472638]
+layer = 0
+
+[node name="Filter" type="Sprite2D" parent="CanvasLayer" unique_id=1715958817]
+modulate = Color(0, 0, 0, 0.35000002)
+position = Vector2(640, 360)
+texture = ExtResource("40")

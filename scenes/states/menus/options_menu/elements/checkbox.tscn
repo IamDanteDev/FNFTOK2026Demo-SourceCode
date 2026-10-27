@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://djmd1xo5bu8ax"]
+
+[ext_resource type="Texture2D" uid="uid://dpsc0bc41thyd" path="res://scenes/states/menus/options_menu/checkboxpsych.png" id="1"]
+[ext_resource type="Script" uid="uid://coak8hg08chnc" path="res://scenes/states/menus/options_menu/elements/checkbox.gd" id="2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvphh"]
+atlas = ExtResource("1")
+region = Rect2(376, 166, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7xya"]
+atlas = ExtResource("1")
+region = Rect2(564, 166, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78uuq"]
+atlas = ExtResource("1")
+region = Rect2(0, 332, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvjuj"]
+atlas = ExtResource("1")
+region = Rect2(188, 332, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_doxv0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vahau"]
+atlas = ExtResource("1")
+region = Rect2(188, 0, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slwyb"]
+atlas = ExtResource("1")
+region = Rect2(376, 0, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjs5d"]
+atlas = ExtResource("1")
+region = Rect2(564, 0, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07gvu"]
+atlas = ExtResource("1")
+region = Rect2(0, 166, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxqo6"]
+atlas = ExtResource("1")
+region = Rect2(188, 166, 188, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhhxf"]
+atlas = ExtResource("1")
+region = Rect2(376, 332, 188, 166)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cocle"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvphh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7xya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78uuq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvjuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_doxv0")
+}],
+"loop": false,
+"name": &"false",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vahau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slwyb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjs5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07gvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxqo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhhxf")
+}],
+"loop": false,
+"name": &"true",
+"speed": 12.0
+}]
+
+[node name="Checkbox" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_cocle")
+animation = &"false"
+frame = 4
+frame_progress = 1.0
+script = ExtResource("2")

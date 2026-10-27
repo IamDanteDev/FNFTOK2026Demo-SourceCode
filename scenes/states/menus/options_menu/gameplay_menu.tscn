@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cghox5ne0veuc"]
+
+[ext_resource type="Script" uid="uid://b8auiy8uktlri" path="res://scenes/states/menus/options_menu/gameplay_menu.gd" id="1"]
+[ext_resource type="Shader" uid="uid://kxtocjhgrn7x" path="res://assets/resources/shaders/noise.gdshader" id="2"]
+[ext_resource type="Theme" uid="uid://cfsgglmh7kv8p" path="res://assets/resources/themes/Paper_Major.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://tq4kix8f4kkj" path="res://coffeeshop1.png" id="4"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_k1ewj"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qybar"]
+noise = SubResource("FastNoiseLite_k1ewj")
+seamless = true
+seamless_blend_skirt = 0.46
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5tdu8"]
+shader = ExtResource("2")
+shader_parameter/NOISE_TEXTURE = SubResource("NoiseTexture2D_qybar")
+shader_parameter/strength = 5.0
+shader_parameter/uv_scaling = 1.0
+shader_parameter/movement_direction = Vector2(1, 0)
+shader_parameter/movement_speed = 0.05
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wdr6j"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_pi2tb"]
+noise = SubResource("FastNoiseLite_wdr6j")
+seamless = true
+seamless_blend_skirt = 0.455
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ba1bp"]
+shader = ExtResource("2")
+shader_parameter/NOISE_TEXTURE = SubResource("NoiseTexture2D_pi2tb")
+shader_parameter/strength = 5.0
+shader_parameter/uv_scaling = 1.0
+shader_parameter/movement_direction = Vector2(1, 0)
+shader_parameter/movement_speed = 0.1
+
+[node name="GameplayMenu" type="Node2D"]
+script = ExtResource("1")
+
+[node name="label_holder" type="Control" parent="."]
+material = SubResource("ShaderMaterial_5tdu8")
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -5
+
+[node name="Coffeeshop1" type="Sprite2D" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_ba1bp")
+position = Vector2(639, 358)
+scale = Vector2(0.667708, 0.666667)
+texture = ExtResource("4")
