@@ -1,12 +1,10 @@
 # FNF: The Origami King 2026 Demo — Source Code
 
-An **unofficial community project** aiming to bring *Friday Night Funkin': The Origami King (2026 Demo)* to Linux.
+An **unofficial community project** of *Friday Night Funkin': The Origami King (2026 Demo)* source code
 
 The project was reconstructed from the Windows version using [Godot Decompiler](https://www.decompiler.com/godot). This repository holds the recovered **source code and assets** only — no build artifacts.
 
 **Disclaimer:** I am not affiliated with the original developers and have not received permission to redistribute this project. All original content belongs to its respective owners. If the development team has concerns, they can contact me through GitHub to discuss removal.
-
-**Status:** Experimental — Work in Progress.
 
 ## Requirements
 
@@ -48,23 +46,9 @@ The main scene is `res://scenes/states/menus/title_screen/title_screen.tscn`.
 The data pack is distributed through [Releases](https://github.com/IamDanteDev/FNFTOK2026Demo-SourceCode/releases/latest):
 
 1. Download `FNFTOK.pck`.
-2. Place it next to `FNFTOK.x86_64` and `FNFTOK.sh` in the same directory.
-3. Make the launcher executable and run it:
+2. Make the launcher executable and run it:
 
-```sh
-chmod +x FNFTOK.sh FNFTOK.x86_64
-./FNFTOK.sh
-```
-
-`FNFTOK.sh` only resolves its own directory and starts `FNFTOK.x86_64` with the arguments it received. Godot picks up the `.pck` sitting beside the binary.
-
-## Build it yourself
-
-The `Linux` preset exports to `./FNFTOK.x86_64`, alongside `FNFTOK.pck` and the launcher script. Use **Project → Export** in the editor, or:
-
-```sh
-godot --headless --export-release "Linux" ./FNFTOK.x86_64
-```
+Godot detects the `.pck` file
 
 ## Notes on the reconstruction
 
