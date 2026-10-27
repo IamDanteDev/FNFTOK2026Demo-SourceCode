@@ -1,6 +1,6 @@
-# FNF: The Origami King — Linux & macOS Port
+# FNF: The Origami King — Linux Port
 
-An **unofficial community project** aiming to bring *Friday Night Funkin': The Origami King (2026 Demo)* to Linux and macOS.
+An **unofficial community project** aiming to bring *Friday Night Funkin': The Origami King (2026 Demo)* to Linux.
 
 The project was reconstructed from the Windows version using [Godot Decompiler](https://www.decompiler.com/godot).
 
